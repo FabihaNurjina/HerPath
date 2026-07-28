@@ -28,6 +28,9 @@ def respond(message, history):
     messages = [{"role": "system", "content": system_prompt}]
 
     if history:
+        for user_msg, assistant_msg in history:
+            messages.append({"role": "user", "content": user_msg})
+            messages.append({"role": "assistant", "content": assistant_msg})
         messages.extend(history)
 
     messages.append({"role": "user", "content": message})
