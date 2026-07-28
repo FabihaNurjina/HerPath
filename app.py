@@ -37,7 +37,6 @@ def respond(message, history):
         max_tokens=500,
         temperature =.7,
         top_p=0.9,
-        stream=True,
     )
 
     return response.choices[0].message.content.strip()
