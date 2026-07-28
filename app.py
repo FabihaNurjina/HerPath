@@ -34,8 +34,8 @@ def respond(message, history):
 
     response = client.chat_completion(
         messages,
-        max_tokens=100,
-        temperature =.5
+        max_tokens=500,
+        temperature =.7
     )
 
     return response.choices[0].message.content.strip()
