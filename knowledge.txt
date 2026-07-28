@@ -1,0 +1,120 @@
+Engineering + STEM:
+HerPath is an AI assistant that helps women and girls explore opportunities in engineering, technology, artificial intelligence, research, and STEM careers. 
+
+Engineering is one of the fastest-growing career fields and includes branches such as Computer Science Engineering (CSE), Electronics and Communication Engineering (ECE), Electrical Engineering (EEE), Mechanical Engineering, Civil Engineering, Chemical Engineering, Aerospace Engineering, Biomedical Engineering, and Artificial Intelligence.
+
+Kode With Klossy (KWK) is a free coding camp for girls and gender-expansive students aged 13–18. It teaches web development, data science, artificial intelligence, and machine learning through hands-on projects. 
+MIT Women's Technology Program (WTP) is a free summer engineering program that introduces high school students to engineering and computer science through intensive coursework and projects. 
+Women Techmakers by Google supports women in technology through workshops, mentorship, networking events, and technical learning opportunities.
+Women Who Code helps women improve programming skills through coding events, mentorship, technical workshops, and career support.
+
+Generation Google Scholarship supports students pursuing computer science and related technical fields. 
+It recognizes academic achievement, leadership, and financial need.
+Adobe Women-in-Technology Scholarship supports women studying computer science, engineering, artificial intelligence, and related technical fields. Recipients may receive financial support and mentorship.
+Society of Women Engineers (SWE) Scholarships provide financial assistance to women pursuing undergraduate and graduate engineering degrees.
+IEEE Women in Engineering (WIE) offers scholarships, travel grants, mentoring, and professional development opportunities for women in engineering and technology.
+British Council Women in STEM Scholarships support women from eligible countries who want to pursue master's degrees in STEM subjects at selected UK universities.
+AAUW International Fellowships provide funding for women pursuing graduate or postgraduate studies in various disciplines, including STEM.
+Science Ambassador Scholarship is a full-tuition scholarship for women in science, technology, engineering, and mathematics. 
+Applicants submit a short educational video explaining a STEM topic.
+
+Research Databases:
+- Google Scholar
+- Semantic Scholar
+- IEEE Xplore
+- ACM Digital Library
+- PubMed
+- SpringerLink
+- ScienceDirect
+- JSTOR
+- arXiv
+- DOAJ (Directory of Open Access Journals)
+
+Preprint Servers: A preprint server is an online platform where researchers share their research papers before they are formally peer-reviewed and published in a journal.
+- arXiv
+- bioRxiv
+- medRxiv
+- SSRN
+
+Academic Search Tips:
+- Use specific keywords.
+- Filter by publication year.
+- Read abstracts before downloading papers.
+- Check citation counts.
+- Review references for related work.
+
+Reference Management:
+- Zotero
+- Mendeley
+- EndNote
+
+Research Writing:
+- Structure papers using IMRaD:
+  - Introduction
+  - Methods
+  - Results
+  - Discussion
+- Cite sources properly.
+- Avoid plagiarism.
+- Proofread before submission.
+
+Research Opportunities:
+- Undergraduate research programs
+- Graduate research assistantships
+- Research internships
+- University laboratories
+- Open-source research projects
+- International research collaborations
+
+Funding Sources:
+- Government research grants
+- University funding
+- Research fellowships
+- Women in STEM grants
+- International funding agencies
+
+Research Skills:
+- Literature review
+- Critical reading
+- Experimental design
+- Data collection
+- Data analysis
+- Statistical reasoning
+- Academic writing
+- Presentation skills
+
+Research Ethics:
+- Obtain required approvals.
+- Respect participant privacy.
+- Report findings honestly.
+- Avoid plagiarism and data fabrication.
+- Disclose conflicts of interest.
+
+AI & Computer Science Research:
+- Machine Learning
+- Artificial Intelligence
+- Computer Vision
+- Natural Language Processing
+- Robotics
+- Cybersecurity
+- Data Science
+- Human-Computer Interaction
+
+Datasets:
+- Kaggle
+- UCI Machine Learning Repository
+- Hugging Face Datasets
+- Google Dataset Search
+
+Research Communities:
+- GitHub
+- Hugging Face
+- ResearchGate
+- ORCID
+
+Conference Preparation:
+- Read the Call for Papers.
+- Follow formatting guidelines.
+- Prepare a clear presentation.
+- Practice answering questions.
+- Network with researchers.
