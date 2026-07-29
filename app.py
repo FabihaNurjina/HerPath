@@ -128,7 +128,7 @@ def respond(message, history):
 with gr.Blocks(theme=gr.themes.Soft()) as demo:
     # 1. Cover Banner (Top)
     cover_image = gr.Image(
-        value="2.png",
+        value="ChatGPT Image Jul 29, 2026, 10_52_57 PM.png",
         show_label=False,
         container=False,
         height=180,
@@ -139,7 +139,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
     with gr.Row():
         with gr.Column(scale=1, min_width=80):
             logo = gr.Image(
-                value="ChatGPT Image Jul 29, 2026, 09_24_42 PM.png",
+                value="ChatGPT Image Jul 29, 2026, 10_46_43 PM.png",
                 show_label=False,
                 container=False,
                 height=80,
@@ -147,15 +147,9 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
             )
 
         with gr.Column(scale=5):
-            gr.Markdown("# Kode with Klossy AI Guide")
-            gr.Markdown("Welcome! Fill out your profile to get personalized advice.")
-
-    # 3. Chatbot Interface
-    gr.ChatInterface(
-        fn=respond, 
-        title="HerPath🌸",
-        description="Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance."
-    )
+            gr.Markdown("HerPath🌸")
+            gr.Markdown("Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance.")
+            
 
 # 4. Launch the application
 demo.launch()
