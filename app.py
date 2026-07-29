@@ -124,8 +124,22 @@ def respond(message, history):
     return response.choices[0].message.content.strip()
 #Launch------------------------------------------------------------------------
 
-    
-chatbot = gr.ChatInterface(fn=respond, title="HerPath🌸",description="Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance.")
+with gr.Row():
+        # Logo in a small column next to the title
+    with gr.Column(scale=1, min_width=80):
+         logo = gr.Image(
+        "ChatGPT Image Jul 29, 2026, 09_24_42 PM.png", 
+        show_label=False, 
+        container=False, 
+        height=80, 
+        interactive=False)
+
+    with gr.Column(scale=5):
+         gr.Markdown("# Kode with Klossy AI Guide")
+         gr.Markdown("Welcome! Fill out your profile to get personalized advice.")
+
+
+gr.ChatInterface(fn=respond, title="HerPath🌸",description="Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance.")
 with gr.Blocks() as demo:
     # Cover Banner
     cover_image = gr.Image(
@@ -136,17 +150,7 @@ with gr.Blocks() as demo:
         interactive=False
     )
 
-    with gr.Row():
-        # Logo in a small column next to the title
-        with gr.Column(scale=1, min_width=80):
-            logo = gr.Image("ChatGPT Image Jul 29, 2026, 09_24_42 PM.png", show_label=False, container=False, height=80, interactive=False)
-
-        with gr.Column(scale=5):
-            gr.Markdown("# Kode with Klossy AI Guide")
-            gr.Markdown("Welcome! Fill out your profile to get personalized advice.")
-
-
-chatbot.launch()
+demo.launch()
 
 
 # TODO: This is just a starting point! Customize the system prompt,
