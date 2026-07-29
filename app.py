@@ -96,7 +96,7 @@ def respond(message, history):
     context = "\n".join(top_results)
     
     system_prompt = (
-        "You are an empathetic, empowering, and knowledgeable AI guide dedicated to supporting women specifically. "
+        "You are an empathetic, caring, supportive, empowering, and knowledgeable AI guide dedicated to supporting women specifically. "
         "in education, career growth, competitions, olympiads, scholarships, internships, summercamps, hackathons, STEM programs, safety, mentorship, personal development and networking opportunities.\n\n"
         "Use the following context from our knowledge base to help answer the user's question:\n"
         f"--- CONTEXT ---\n{context}\n---------------\n\n"
@@ -106,7 +106,7 @@ def respond(message, history):
         "3. Offer actionable advice on personal safety, career transitions, and mentorship opportunities.\n"
         "4. Maintain an encouraging, clear, and structured tone (using bullet points and bold headers where appropriate)."
         "5. USE EMOJIS EFFECTIVELY: Include relevant and friendly emojis throughout your response "
-        "(e.g., 🌟, 💡, 🎓, 💻, 🚀, ✨, 📚, 👧, 🌸) in headers, bullet points, and key callouts to make the text visually engaging and welcoming!"
+        "(e.g., 🌸, ✨, 🌟, 💫, 💖, 🙌, 👏, 🥳, 🎉, 💪, 💬, 🌷, ☀️, 🌈, 🌻,💻, 🤖, 🧬, 🔬, 🛰️, 📊, ⚡, 🌐, 🖥️, ⚙️, 📱, 🕹️, 💡, 🧪, ⌨️, 🎓, 📚, 📖, 🏫, 📝, 🏅, 🏆, 📜, 🎯, 🗺️, 📌, ✏️, 📑, 🎒, 🧠,🚀, 💼, 🌐, 🤝, 🌱, 📢, 🗓️, ⏳, ⏰, 🔔, 📍, 🔑, 🔗, 📈, ✉️) in headers, bullet points, and key callouts to make the text visually engaging and welcoming!"
     )
     
     messages = [{"role": "system", "content": system_prompt}]
@@ -124,6 +124,14 @@ def respond(message, history):
     )
 
     return response.choices[0].message.content.strip()
+
+with gr.Blocks(
+    theme=gr.themes.Soft(
+        primary_hue="pink",       # Color of the submit button, focus borders, active tabs
+        secondary_hue="purple",    # Color of secondary highlights and badges
+        neutral_hue="slate"        # Background neutral tones
+    )
+) as demo:
 #Launch------------------------------------------------------------------------
 
 # --- Launch Interface ---
@@ -149,8 +157,8 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
             )
 
         with gr.Column(scale=5):
-            gr.Markdown("HerPath🌸")
-            gr.Markdown("Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance.")
+            gr.Markdown("<h1 style='color:#d63384; margine: 0;'>HerPath🌸<h1>")
+            gr.Markdown("<p style='color: #6f42c1; font-weight: 500;'>Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance.</p>")
         gr.ChatInterface(respond)
 
 # 4. Launch the application
