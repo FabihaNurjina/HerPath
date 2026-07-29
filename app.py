@@ -105,6 +105,8 @@ def respond(message, history):
         "2. Detail specific eligibility requirements, application deadlines, and actionable next steps.\n"
         "3. Offer actionable advice on personal safety, career transitions, and mentorship opportunities.\n"
         "4. Maintain an encouraging, clear, and structured tone (using bullet points and bold headers where appropriate)."
+        "5. USE EMOJIS EFFECTIVELY: Include relevant and friendly emojis throughout your response "
+        "(e.g., 🌟, 💡, 🎓, 💻, 🚀, ✨, 📚, 👧, 🌸) in headers, bullet points, and key callouts to make the text visually engaging and welcoming!"
     )
     
     messages = [{"role": "system", "content": system_prompt}]
