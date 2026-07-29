@@ -65,7 +65,7 @@ def get_top_chunks(query, chunk_embeddings, text_chunks):
 
 
   # Find the indices of the 3 chunks with highest similarity scores
-  top_indices = torch.topk(similarities, k=3).indices
+  top_indices = torch.topk(similarities, k=5).indices
 
   # Print the top indices
   print(top_indices)
@@ -93,7 +93,7 @@ chunk_embeddings = create_embeddings(cleaned_chunks)
 #Response Function------------------------------------------------------------------
 def respond(message, history):
     top_results = get_top_chunks( message, chunk_embeddings, cleaned_chunks)
-    context = "\n".join(top_results)
+    context = "\n\n".join(top_results)
     
     system_prompt = (
         "You are an empathetic, caring, supportive, empowering, and knowledgeable AI guide dedicated to supporting women specifically. "
@@ -118,7 +118,7 @@ def respond(message, history):
 #Calling Model--------------------------------------------------------------------
     response = client.chat_completion(
         messages,
-        max_tokens=500,
+        max_tokens=700,
         temperature =.7,
         top_p=0.9,
     )
