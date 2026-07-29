@@ -225,25 +225,246 @@ Benefits:
 
 -------------********----------
 
+Research programmes:
 
-Research Databases:
-- Google Scholar
-- Semantic Scholar
-- IEEE Xplore
-- ACM Digital Library
-- PubMed
-- SpringerLink
-- ScienceDirect
-- JSTOR
-- arXiv
-- DOAJ (Directory of Open Access Journals)
+Programme Name:
+Mitacs Globalink Research Internship (GRI)
+Category:
+International Research Internship
+Description:
+A competitive research internship that allows undergraduate students from eligible countries to conduct research at Canadian universities under faculty supervision.
+Eligibility:
+- Undergraduate students
+- Students from eligible countries and universities
+- Strong academic record
+Benefits:
+- Research experience
+- Mentorship from university professors
+- International exposure
+- Financial support for eligible participants
+Application Process:
+Apply online through the official Mitacs website.
+Application Period:
+Typically opens in August–September. Check the official website for current dates.
+Official Website:
+https://www.mitacs.ca/
+Best For:
+Undergraduate students interested in research and graduate studies.
+-------------********--------------
+Programme Name:
+DAAD RISE Germany
+Category:
+International Research Internship
+Description:
+A research internship programme that enables undergraduate students to work on research projects at universities and research institutions in Germany.
+Eligibility:
+- Undergraduate students
+- Strong academic record
+- Open to students from eligible countries
+Benefits:
+- Research experience
+- Monthly scholarship
+- International exposure
+- Mentorship from researchers
+Application Process:
+Apply online through the official DAAD portal.
+Application Period:
+Typically opens in September and closes in November. Check the official website for current dates.
+Official Website:
+https://www.daad.de/rise
+Best For:
+Undergraduate students interested in STEM research and studying or working in Germany.
+-------------********--------------
+Programme Name:
+KAUST Visiting Student Research Program (VSRP)
+Category:
+International Research Internship
+Description:
+A research internship at King Abdullah University of Science and Technology (KAUST) in Saudi Arabia, where students work on research projects under faculty supervision.
+Eligibility:
+- Undergraduate or master's students
+- Strong academic record
+- English proficiency required
+Benefits:
+- Hands-on research experience
+- Mentorship from KAUST faculty
+- Monthly stipend
+- Accommodation and travel support for eligible participants
+Application Process:
+Apply online through the official KAUST VSRP website.
+Application Period:
+Applications are accepted throughout the year for many projects. Check the official website for current opportunities.
+Official Website:
+https://vsrp.kaust.edu.sa/
+Best For:
+Students interested in STEM research and gaining international research experience.
+-------------********--------------
+Programme Name:
+L'Oréal–UNESCO For Women in Science
+Category:
+Women in STEM Research Fellowship
+Description:
+A global programme that supports outstanding women researchers through fellowships, recognition, and funding to advance scientific research.
+Eligibility:
+- Women researchers
+- Eligibility varies by country and fellowship
+- Strong research background
+Benefits:
+- Research funding
+- International recognition
+- Networking opportunities
+Application Process:
+Apply through the official programme website or participating national partners.
+Application Period:
+Varies by country and programme.
+Official Website:
+https://www.forwomeninscience.com/
+Best For:
+Women pursuing careers in scientific research.
+-------------********--------------
+Programme Name:
+Google Women in Research
+Category:
+Women in Computer Science Research
+Description:
+Google supports women in computer science research through selected research awards, collaborations, and academic initiatives.
+Eligibility:
+- Women researchers
+- Eligibility varies by programme
+- Computer science or related fields
+Benefits:
+- Research funding
+- Collaboration opportunities
+- Professional recognition
+Application Process:
+Apply through eligible Google research programmes.
+Application Period:
+Varies by programme.
+Official Website:
+https://research.google/
+Best For:
+Women conducting research in computer science and AI.
+-------------********--------------
+here are some other programmes related to research that are women-specific:
+OWSD Early Career Fellowship
+OWSD PhD Fellowships
+L'Oréal–UNESCO For Women in Science
+Schlumberger Faculty for the Future
+AAUW International Fellowships
+British Council Women in STEM Scholarships
+WiML Mentorship & Research Workshops
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Hackathons:
+
+
+Programme Name:
+Technovation Girls
+Category:
+Global AI & Technology Competition
+Description:
+A global programme where girls develop AI or technology solutions to solve real-world community problems.
+Eligibility:
+- Girls aged 8–18
+- Team participation
+- No prior coding experience required
+benefits:
+- AI and coding skills
+- Mentorship
+- Global competition
+- Certificates and awards
+Application Process:
+Register online through the official website.
+Application Period:
+Typically opens in October. Check the official website for current dates.
+Official Website:
+https://technovationchallenge.org/
+Best For:
+Girls interested in AI, entrepreneurship, and social impact.
+-------------********--------------
+Programme Name:
+Google Solution Challenge
+Category:
+Global Innovation Competition
+Description:
+A competition where students create technology solutions addressing the United Nations Sustainable Development Goals (SDGs).
+Eligibility:
+- Students
+- Individual or team participation
+- Basic programming knowledge recommended
+Benefits:
+- Mentorship
+- Google learning resources
+- Global recognition
+- Networking opportunities
+Application Process:
+Register and submit your project online.
+Application Period:
+Typically opens early each year.
+Official Website:
+https://developers.google.com/community/gdsc-solution-challenge
+Best For:
+Students passionate about technology and social impact.
+-------------********--------------
+Programme Name:
+NASA Space Apps Challenge
+Category:
+Global Hackathon
+Description:
+A worldwide hackathon where participants build innovative solutions using NASA's open data.
+Eligibility:
+- Open to students and professionals
+- Individual or team participation
+Benefits:
+- Problem-solving experience
+- Global networking
+- NASA recognition
+- Certificates
+Application Process:
+Register online through the official website.
+Application Period:
+Typically held annually around September–October.
+Official Website:
+https://www.spaceappschallenge.org/
+Best For:
+Students interested in space, AI, data science, and engineering.
+
+-------------********--------------
+Programme Name:
+Major League Hacking (MLH)
+Category:
+Hackathon Community
+Description:
+A global community hosting beginner-friendly and advanced hackathons for students throughout the year.
+Eligibility:
+- Students
+- Beginners welcome
+- Team or individual participation
+Benefits:
+- Hands-on project experience
+- Networking
+- Workshops
+- Prizes and certificates
+Application Process:
+Register through the official MLH website.
+Application Period:
+Events are held throughout the year.
+Official Website:
+https://mlh.io/
+Best For:
+Students looking to gain hackathon experience and improve coding skills.
+
+-------------********--------------
+
+
+
+~~~~~~~~~~~~~~~~~~~~
 Preprint Servers: A preprint server is an online platform where researchers share their research papers before they are formally peer-reviewed and published in a journal.
 - arXiv
 - bioRxiv
 - medRxiv
 - SSRN
-
+~~~~~~~~~~~~~~~~~~~~
 Academic Search Tips:
 - Use specific keywords.
 - Filter by publication year.
