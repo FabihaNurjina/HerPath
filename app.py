@@ -137,7 +137,7 @@ with gr.Blocks(
 
     # 1. Cover Banner (Top)
     cover_image = gr.Image(
-        value="ChatGPT Image Jul 29, 2026, 10_52_57 PM.png",
+        value="WhatsApp Image 2026-07-30 at 12.51.54 AM.jpeg",
         show_label=False,
         container=False,
         height=180,
