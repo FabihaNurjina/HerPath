@@ -24,9 +24,94 @@ Typically opens in the first half of the year.
 Best For:
 High school students exploring computer science and AI.
 
+ -----------------*****---------------------
+
 MIT Women's Technology Program (WTP) is a free summer engineering program that introduces high school students to engineering and computer science through intensive coursework and projects. 
+https://oeop.mitProgramme Name: MIT Women's Technology Program (WTP)
+Category: Free Summer Engineering and Computer Science Program
+Description:
+A rigorous summer program by the Massachusetts Institute of Technology (MIT) that introduces high school students to engineering and computer science through hands-on coursework, labs, and projects.
+Eligibility:
+- Primarily women and underrepresented genders
+- High school students (typically rising seniors)
+- Open to domestic and international applicants
+- No prior advanced programming or engineering experience required
+Benefits:
+- Tuition-free program
+- Hands-on engineering and computer science experience
+- Mentorship from MIT students and faculty
+- Exposure to STEM careers and college-level learning
+Application Process:
+Apply through the official MIT WTP website by submitting the required application materials.
+Application Period:
+Applications typically open in late fall and close in January. Check the official website for current dates.
+Official Website:.edu/programs/mit-womens-technology-program
+Best For:
+High school students interested in exploring engineering, computer science, and STEM careers at an advanced level.
+
+---------------********----------------
+
 Women Techmakers by Google supports women in technology through workshops, mentorship, networking events, and technical learning opportunities.
+Programme Name: Women Techmakers
+Category: Women in Technology Community and Professional Development Program
+Description:
+Women Techmakers is Google's global initiative that supports women in technology through learning opportunities, mentorship, networking events, and community programs to help them grow their technical skills and careers.
+Eligibility:
+- Women and underrepresented genders in technology
+- Students, professionals, and aspiring technologists
+- Open to participants worldwide
+- No specific technical experience required for many community events
+Benefits:
+- Technical workshops and training
+- Mentorship opportunities
+- Networking with the global tech community
+- Career development resources and events
+Application Process:
+Join through the official Women Techmakers website or participate in local Women Techmakers communities and events.
+Application Period:
+Available throughout the year. Some programs and events have separate application or registration deadlines.
+Official Website:
+https://www.womentechmakers.com/
+Best For:
+Women and girls seeking technical learning, mentorship, networking, and career growth in technology.
+
+
+-------------------***********----------------------
+
 Women Who Code helps women improve programming skills through coding events, mentorship, technical workshops, and career support.
+Programme Name: Women Who Code
+Category: Global Technology Community and Career Development Program
+Description:
+Women Who Code is a global nonprofit organization that supports women in technology by providing technical education, mentorship, networking opportunities, leadership development, and career resources.
+Eligibility:
+- Women and underrepresented genders in technology
+- Students, professionals, and career changers
+- Open to participants worldwide
+- No specific programming experience required for many events
+Benefits:
+- Technical workshops and coding events
+- Mentorship and career guidance
+- Networking with the global tech community
+- Leadership and professional development opportunities
+Application Process:
+Join the community by creating a free account on the official Women Who Code website and registering for events or programs.
+Application Period:
+Membership is available year-round. Individual events and programs may have separate registration deadlines.
+Official Website:
+https://womenwhocode.com/
+Best For:
+Women and girls looking to improve coding skills, connect with the tech community, and advance their careers in technology.
+
+-------------------************---------------
+
+
+
+
+
+
+
+
+
 
 Generation Google Scholarship supports students pursuing computer science and related technical fields. 
 It recognizes academic achievement, leadership, and financial need.
