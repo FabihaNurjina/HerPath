@@ -158,7 +158,7 @@ with gr.Blocks(
         with gr.Column(scale=5):
             gr.Markdown("<h1 style='color:#d63384; margin: 0;'>HerPath🌸</h1>")
             gr.Markdown("<p style='color: #6f42c1; font-weight: 500;'>Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance.</p>")
-        gr.ChatInterface(respond)
+    gr.ChatInterface(respond)
 
 # 4. Launch the application
 demo.launch()
