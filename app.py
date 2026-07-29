@@ -124,7 +124,9 @@ def respond(message, history):
     )
 
     return response.choices[0].message.content.strip()
+#Launch------------------------------------------------------------------------
 
+# --- Launch Interface ---
 with gr.Blocks(
     theme=gr.themes.Soft(
         primary_hue="pink",       # Color of the submit button, focus borders, active tabs
@@ -132,10 +134,7 @@ with gr.Blocks(
         neutral_hue="slate"        # Background neutral tones
     )
 ) as demo:
-#Launch------------------------------------------------------------------------
 
-# --- Launch Interface ---
-with gr.Blocks(theme=gr.themes.Soft()) as demo:
     # 1. Cover Banner (Top)
     cover_image = gr.Image(
         value="ChatGPT Image Jul 29, 2026, 10_52_57 PM.png",
@@ -157,7 +156,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
             )
 
         with gr.Column(scale=5):
-            gr.Markdown("<h1 style='color:#d63384; margine: 0;'>HerPath🌸<h1>")
+            gr.Markdown("<h1 style='color:#d63384; margin: 0;'>HerPath🌸</h1>")
             gr.Markdown("<p style='color: #6f42c1; font-weight: 500;'>Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance.</p>")
         gr.ChatInterface(respond)
 
