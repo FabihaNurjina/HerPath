@@ -125,7 +125,7 @@ def respond(message, history):
 #Launch------------------------------------------------------------------------
 
     
-chatbot = gr.ChatInterface(fn=respond, title="HerPath:cherry_blossom:",description="Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance.")
+chatbot = gr.ChatInterface(fn=respond, title="HerPath🌸",description="Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance.")
 
 chatbot.launch()
 
