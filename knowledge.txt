@@ -3,7 +3,27 @@ HerPath is an AI assistant that helps women and girls explore opportunities in e
 
 Engineering is one of the fastest-growing career fields and includes branches such as Computer Science Engineering (CSE), Electronics and Communication Engineering (ECE), Electrical Engineering (EEE), Mechanical Engineering, Civil Engineering, Chemical Engineering, Aerospace Engineering, Biomedical Engineering, and Artificial Intelligence.
 
-Kode With Klossy (KWK) is a free coding camp for girls and gender-expansive students aged 13–18. It teaches web development, data science, artificial intelligence, and machine learning through hands-on projects. 
+Programme Name: Kode With Klossy (KWK)
+Category: Free Coding Summer Camp
+Description:
+A free coding programme for girls and gender-expansive students that teaches Web Development, Data Science, Artificial Intelligence, and Machine Learning through project-based learning.
+Eligibility:
+- Girls and gender-expansive students
+- Ages 13–18
+- No prior coding experience required for many camps
+Benefits:
+- Free programme
+- Technical skills
+- Mentorship
+- Community
+- Certificate of completion
+Application Process:
+Apply through the official Kode With Klossy website.
+Application Period:
+Typically opens in the first half of the year.
+Best For:
+High school students exploring computer science and AI.
+
 MIT Women's Technology Program (WTP) is a free summer engineering program that introduces high school students to engineering and computer science through intensive coursework and projects. 
 Women Techmakers by Google supports women in technology through workshops, mentorship, networking events, and technical learning opportunities.
 Women Who Code helps women improve programming skills through coding events, mentorship, technical workshops, and career support.
