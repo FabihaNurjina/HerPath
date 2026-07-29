@@ -103,25 +103,128 @@ Best For:
 Women and girls looking to improve coding skills, connect with the tech community, and advance their careers in technology.
 
 -------------------************---------------
+Programme Name: Girls Who Code (GWC)
+Category: Free Coding Education Programme
+Description:
+A free nonprofit programme that teaches coding and computer science to girls and non-binary students through summer programmes, clubs, and self-paced learning.
+Eligibility:
+- Girls and non-binary students
+- Grade and age requirements vary by programme
+- No prior coding experience required for most beginner programmes
+Benefits:
+- Free coding education
+- Hands-on programming projects
+- Mentorship and career guidance
+- Global community of learners
+- Certificates and alumni opportunities (programme-dependent)
+Application Process:
+Apply online through the official Girls Who Code website.
+Application Period:
+Varies by programme and is announced annually.
+Official Website:
+https://girlswhocode.com
+Best For:
+Students interested in coding, computer science, and technology careers.
 
-
-
-
-
-
-
-
-
+~~~~~~~~~~~~~~~~~~~~~~~~~******~~~~~~~~~~~~~~~~~~~~~
+scholarships:
 
 Generation Google Scholarship supports students pursuing computer science and related technical fields. 
 It recognizes academic achievement, leadership, and financial need.
+Programme Name: Generation Google Scholarship
+
+Category: Scholarship for Computer Science Students
+Description:
+The Generation Google Scholarship supports students pursuing computer science and related technical fields by providing financial assistance and encouraging diversity in technology.
+Eligibility:
+- Students enrolled in or planning to enrol in a Bachelor's degree in Computer Science or a closely related field
+- Must meet the eligibility requirements for the specific region (e.g., Asia Pacific, North America, Europe)
+- Demonstrate academic achievement, leadership, and commitment to diversity in technology
+Benefits:
+- Scholarship funding (amount varies by region)
+- Recognition from Google
+- Opportunities to connect with the Google community and other scholars
+Application Process:
+Apply online through the official Google Scholarships portal and submit the required documents.
+Application Period:
+Applications typically open once a year. Dates vary by region.
+Official Website:
+https://buildyourfuture.withgoogle.com/scholarships
+Best For:
+Undergraduate students pursuing computer science or related fields who demonstrate academic excellence and leadership.
+
+-----------------*******-------------
+
+
 Adobe Women-in-Technology Scholarship supports women studying computer science, engineering, artificial intelligence, and related technical fields. Recipients may receive financial support and mentorship.
+Programme Name: Adobe Women-in-Technology Scholarship
+
+Category: Scholarship for Women in Technology
+Description:
+The Adobe Women-in-Technology Scholarship supports women pursuing degrees in computer science and related technical fields by providing financial assistance and opportunities to grow in the technology industry.
+Eligibility:
+- Students identifying as women
+- Enrolled in an undergraduate degree in Computer Science, Computer Engineering, Data Science, Artificial Intelligence, or a related technical field
+- Demonstrate strong academic performance and leadership potential
+Benefits:
+- Scholarship funding
+- Mentorship opportunities
+- Opportunity to interview for an Adobe internship (subject to eligibility and availability)
+- Recognition from Adobe
+Application Process:
+Apply online through the official Adobe Women-in-Technology Scholarship application portal.
+Application Period:
+Applications typically open once a year. Dates may vary annually.
+Official Website:
+https://research.adobe.com/scholarship/
+Best For:
+Women pursuing undergraduate studies in computer science or related technology fields who seek financial support and career opportunities.
+
+-----------------*******----------
 Society of Women Engineers (SWE) Scholarships provide financial assistance to women pursuing undergraduate and graduate engineering degrees.
+---------------
 IEEE Women in Engineering (WIE) offers scholarships, travel grants, mentoring, and professional development opportunities for women in engineering and technology.
-British Council Women in STEM Scholarships support women from eligible countries who want to pursue master's degrees in STEM subjects at selected UK universities.
-AAUW International Fellowships provide funding for women pursuing graduate or postgraduate studies in various disciplines, including STEM.
-Science Ambassador Scholarship is a full-tuition scholarship for women in science, technology, engineering, and mathematics. 
-Applicants submit a short educational video explaining a STEM topic.
+Programme Name: IEEE Women in Engineering (WIE) International Scholarship
+Category: Scholarship for Women in Engineering
+Description:
+The IEEE Women in Engineering (WIE) International Scholarship supports outstanding women pursuing undergraduate engineering degrees by providing financial assistance and recognizing academic excellence and leadership. 0
+Eligibility:
+- IEEE WIE Student Member with at least two consecutive years of WIE membership
+- Full-time undergraduate engineering student who has completed two years of study
+- Strong academic performance (minimum GPA requirement or local equivalent)
+- Meet all scholarship application requirements 1
+Benefits:
+- US$2,500 scholarship award
+- Certificate of recognition
+- Recognition from IEEE Women in Engineering
+- Opportunity to join the global IEEE WIE community 2
+Application Process:
+Apply online through the official IEEE Women in Engineering Scholarships portal and submit the required essays and recommendation letters. 3
+Application Period:
+Applications typically open once a year. Check the official website for current dates. 4
+Official Website:
+https://wie.ieee.org/grants-scholarships/
+Best For:
+Women engineering students seeking financial support and recognition for academic excellence and leadership.
+```5
+
+----------------*******------------
+
+Programme Name: Science Ambassador Scholarship
+Category: Scholarship for Women in STEM
+Description:
+The Science Ambassador Scholarship is a full-tuition scholarship funded by Cards Against Humanity for women and non-binary students pursuing undergraduate degrees in science, technology, engineering, or mathematics (STEM).
+Eligibility:
+- Women and non-binary students
+- High school seniors or undergraduate students
+- Planning to pursue or currently enrolled in a STEM degree at an accredited U.S. college or university
+- Must submit a three-minute educational video explaining a STEM topic
+Benefits:
+- Full tuition scholarship for undergraduate study
+- Financial support for eligible STEM programmes
+
+-------------********----------
+
 
 Research Databases:
 - Google Scholar
