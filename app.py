@@ -149,12 +149,10 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
         with gr.Column(scale=5):
             gr.Markdown("HerPath🌸")
             gr.Markdown("Your AI guide for women and girls to discover scholarships, internships, STEM programs, research opportunities, hackathons, competitions, mentorship, and career guidance.")
-
-chatbot=gr.ChatInterface(respond)
+        gr.ChatInterface(respond)
 
 # 4. Launch the application
 demo.launch()
-chatbot.launch()
 
 
 # TODO: This is just a starting point! Customize the system prompt,
