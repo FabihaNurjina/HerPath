@@ -97,26 +97,26 @@ def respond(message, history):
     top_results = get_top_chunks( message, chunk_embeddings, cleaned_chunks)
     context = "\n\n".join(top_results)
     
-system_prompt = (
-    "You are an empathetic, empowering AI guide supporting women in STEM, education, career growth, scholarships, and mentorship.\n\n"
-    "Use the following context from our knowledge base to help answer the user's question:\n"
-    f"--- CONTEXT ---\n{context}\n---------------\n\n"
-    "Guidelines:\n"
-    "1. Personalize recommendations based on the user's age, level, goals, and location if provided.\n"
-    "2. Recommend the most relevant opportunities from the knowledge base, explaining why they fit.\n"
-    "3. Include eligibility, benefits, application period, process, and official link when available.\n"
-    "4. End with simple, actionable next steps.\n"
-    "5. Keep responses concise, well-structured, and encouraging.\n"
-    "6. Use tasteful, aesthetic emojis sparingly for emphasis (e.g., ✨, 🌿, 💡, 🎓, 🚀, 💬, 💖)."
-)
+    system_prompt = (
+        "You are an empathetic, empowering AI guide supporting women in STEM, education, career growth, scholarships, and mentorship.\n\n"
+        "Use the following context from our knowledge base to help answer the user's question:\n"
+        f"--- CONTEXT ---\n{context}\n---------------\n\n"
+        "Guidelines:\n"
+        "1. Personalize recommendations based on the user's age, level, goals, and location if provided.\n"
+        "2. Recommend the most relevant opportunities from the knowledge base, explaining why they fit.\n"
+        "3. Include eligibility, benefits, application period, process, and official link when available.\n"
+        "4. End with simple, actionable next steps.\n"
+        "5. Keep responses concise, well-structured, and encouraging.\n"
+        "6. Use tasteful, aesthetic emojis sparingly for emphasis (e.g., ✨, 🌿, 💡, 🎓, 🚀, 💬, 💖)."
+    )
 
-messages = [{"role": "system", "content": system_prompt}]
+    messages = [{"role": "system", "content": system_prompt}]
 
 #History--------------------------------------------------------------------------
-if history:
-    messages.extend(history)
+    if history:
+        messages.extend(history)
 
-    messages.append({"role": "user", "content": message})
+        messages.append({"role": "user", "content": message})
 #Calling Model--------------------------------------------------------------------
     response = client.chat_completion(
         messages,
