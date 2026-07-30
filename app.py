@@ -120,7 +120,7 @@ def respond(message, history):
 #Calling Model--------------------------------------------------------------------
     response = client.chat_completion(
         messages,
-        max_tokens=700,
+        max_tokens=500,
         temperature =.7,
         top_p=0.9,
     )
