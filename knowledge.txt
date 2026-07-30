@@ -23,7 +23,7 @@ Application Period:
 Typically opens in the first half of the year.
 Best For:
 High school students exploring computer science and AI.
-Application deadline: 15 March 2027
+Kode With Klossy Application deadline: 15 March 2027
  -----------------*****---------------------
 
 MIT Women's Technology Program (WTP) is a free summer engineering program that introduces high school students to engineering and computer science through intensive coursework and projects. 
@@ -48,7 +48,7 @@ Applications typically open in late fall and close in January. Check the officia
 Official Website:.edu/programs/mit-womens-technology-program
 Best For:
 High school students interested in exploring engineering, computer science, and STEM careers at an advanced level.
-Application deadline:15 December 2027
+MIT Women's Technology Program Application deadline:15 December 2027
 ---------------********----------------
 
 Women Techmakers by Google supports women in technology through workshops, mentorship, networking events, and technical learning opportunities.
@@ -74,7 +74,7 @@ Official Website:
 https://www.womentechmakers.com/
 Best For:
 Women and girls seeking technical learning, mentorship, networking, and career growth in technology.
-Application period: Throughout the year
+Women Techmakers Application period: Throughout the year
 
 -------------------***********----------------------
 
@@ -101,7 +101,7 @@ Official Website:
 https://womenwhocode.com/
 Best For:
 Women and girls looking to improve coding skills, connect with the tech community, and advance their careers in technology.
-Application period: Throughout the year
+Women Who Code Application period: Throughout the year
 -------------------************---------------
 Programme Name: Girls Who Code (GWC)
 Category: Free Coding Education Programme
@@ -125,7 +125,7 @@ Official Website:
 https://girlswhocode.com
 Best For:
 Students interested in coding, computer science, and technology careers.
-Application deadline:
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~******~~~~~~~~~~~~~~~~~~~~~
 scholarships:
 
@@ -208,7 +208,7 @@ https://wie.ieee.org/grants-scholarships/
 Best For:
 Women engineering students seeking financial support and recognition for academic excellence and leadership.
 ```5
-Application deadline:31 March 2027
+Adobe Women-in-Technology Scholarship Application deadline:31 March 2027
 ----------------*******------------
 
 Programme Name: Science Ambassador Scholarship
@@ -223,7 +223,7 @@ Eligibility:
 Benefits:
 - Full tuition scholarship for undergraduate study
 - Financial support for eligible STEM programmes
-Application deadline: 15 December 2027
+Science Ambassador Scholarship Application deadline: 15 December 2027
 -------------********----------
 
 Research programmes:
