@@ -139,7 +139,7 @@ with gr.Blocks(
 
     # 1. Cover Banner (Top)
     cover_image = gr.Image(
-        value="WhatsApp Image 2026-07-30 at 12.51.54 AM.jpeg",
+        value="updatedbanner.jpeg",
         show_label=False,
         container=False,
         height=180,
@@ -150,7 +150,7 @@ with gr.Blocks(
     with gr.Row():
         with gr.Column(scale=1, min_width=80):
             logo = gr.Image(
-                value="ChatGPT Image Jul 29, 2026, 10_46_43 PM.png",
+                value="logo.png",
                 show_label=False,
                 container=False,
                 height=80,
