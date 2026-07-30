@@ -79,39 +79,36 @@ def get_top_chunks(query, chunk_embeddings, text_chunks):
     top_chunks.append(chunk)
   # Return the list of most relevant chunks
   return top_chunks
+    
+ #Loading---------------------------------------------------------------------
+with open("knowledge.txt", "r", encoding="utf-8") as file:
+    # Read the entire contents of the file and store it in a variable
+    knowledge_text = file.read()
+
+    # Call the preprocess_text function and store the result in a cleaned_chunks variable
+cleaned_chunks = preprocess_text(knowledge_text)
+
+chunk_embeddings = create_embeddings(cleaned_chunks)
 
 #Response Function------------------------------------------------------------------
 def respond(message, history):
-    #Loading---------------------------------------------------------------------
-    with open("knowledge.txt", "r", encoding="utf-8") as file:
-      # Read the entire contents of the file and store it in a variable
-      knowledge_text = file.read()
-
-    # Call the preprocess_text function and store the result in a cleaned_chunks variable
-    cleaned_chunks = preprocess_text(knowledge_text)
-
-    chunk_embeddings = create_embeddings(cleaned_chunks)
-
+   
     #Response Function added------------------------------------------------------------------
     top_results = get_top_chunks( message, chunk_embeddings, cleaned_chunks)
     context = "\n\n".join(top_results)
     
-    system_prompt = (
-        "You are an empathetic, caring, supportive, empowering, and knowledgeable AI guide dedicated to supporting women specifically. "
-        "in education, career growth, competitions, olympiads, scholarships, internships, summercamps, hackathons, STEM programs, safety, mentorship, personal development and networking opportunities.\n\n"
-        "Use the following context from our knowledge base to help answer the user's question:\n"
-        f"--- CONTEXT ---\n{context}\n---------------\n\n"
-        "For every response:\n"
-        "1. Personalize recommendations based on the user's age, education level, interests, goals, and country if mentioned.\n"
-        "2. Recommend the most relevant opportunities from the knowledge base.\n"
-        "3. Include eligibility, benefits, application process, application period, and official website whenever available.\n"
-        "4. Clearly explain why the recommendation is suitable.\n"
-        "5. End with simple actionable next steps.\n"
-        "6. Maintain an encouraging, clear, and structured tone (using bullet points and bold headers where appropriate)."
-        "7. USE EMOJIS EFFECTIVELY: Include relevant and friendly emojis throughout your response "
-        "(e.g., 🌸, ✨, 🌟, 💫, 💖, 🙌, 👏, 🥳, 🎉, 💪, 💬, 🌷, ☀️, 🌈, 🌻,💻, 🤖, 🧬, 🔬, 🛰️, 📊, ⚡, 🌐, 🖥️, ⚙️, 📱, 🕹️, 💡, 🧪, ⌨️, 🎓, 📚, 📖, 🏫, 📝, 🏅, 🏆, 📜, 🎯, 🗺️, 📌, ✏️, 📑, 🎒, 🧠,🚀, 💼, 🌐, 🤝, 🌱, 📢, 🗓️, ⏳, ⏰, 🔔, 📍, 🔑, 🔗, 📈, ✉️) in headers, bullet points, and key callouts to make the text visually engaging and welcoming!"
-    )
-    
+system_prompt = (
+    "You are an empathetic, empowering AI guide supporting women in STEM, education, career growth, scholarships, and mentorship.\n\n"
+    "Use the following context from our knowledge base to help answer the user's question:\n"
+    f"--- CONTEXT ---\n{context}\n---------------\n\n"
+    "Guidelines:\n"
+    "1. Personalize recommendations based on the user's age, level, goals, and location if provided.\n"
+    "2. Recommend the most relevant opportunities from the knowledge base, explaining why they fit.\n"
+    "3. Include eligibility, benefits, application period, process, and official link when available.\n"
+    "4. End with simple, actionable next steps.\n"
+    "5. Keep responses concise, well-structured, and encouraging.\n"
+    "6. Use tasteful, aesthetic emojis sparingly for emphasis (e.g., ✨, 🌿, 💡, 🎓, 🚀, 💬, 💖)."
+)
     messages = [{"role": "system", "content": system_prompt}]
 #History--------------------------------------------------------------------------
     if history:
