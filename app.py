@@ -3,6 +3,11 @@ import gradio as gr
 from huggingface_hub import InferenceClient
 from sentence_transformers import SentenceTransformer
 import torch
+import re 
+import urllib.parse 
+from datetime import datetime 
+
+
 #Initialize models---------------------------------------------------------------
 model = SentenceTransformer('all-MiniLM-L6-v2')
 client = InferenceClient("Qwen/Qwen2.5-7B-Instruct")
@@ -90,6 +95,44 @@ cleaned_chunks = preprocess_text(knowledge_text)
 
 chunk_embeddings = create_embeddings(cleaned_chunks)
 
+--------------
+
+def create_google_calendar_link(response_text):
+    """
+    Looks for a date like:
+    Deadline: 15 October 2026
+    Application Deadline: 15 October 2026
+    """
+
+    pattern = r"(?:Deadline|Application Deadline)\s*:\s*(\d{1,2}\s+[A-Za-z]+\s+\d{4})"
+
+    match = re.search(pattern, response_text)
+
+    if not match:
+        return ""
+
+    try:
+        deadline = datetime.strptime(match.group(1), "%d %B %Y")
+        start = deadline.strftime("%Y%m%d")
+        end = deadline.strftime("%Y%m%d")
+        title = urllib.parse.quote("Application Deadline")
+        details = urllib.parse.quote("Reminder created by HerPath 🌸")
+        url = (
+            "https://calendar.google.com/calendar/render?"
+            "action=TEMPLATE"
+            f"&text={title}"
+            f"&dates={start}/{end}"
+            f"&details={details}"
+        )
+
+        return (
+            "\n\n📅 **Deadline Reminder**\n"
+            f"🔔 Add this deadline to your Google Calendar:\n{url}"
+        )
+
+    except:
+        return ""
+-------------------------
 #Response Function------------------------------------------------------------------
 def respond(message, history):
    
@@ -108,6 +151,7 @@ def respond(message, history):
         "4. End with simple, actionable next steps.\n"
         "5. Keep responses concise, well-structured, and encouraging.\n"
         "6. Use tasteful, aesthetic emojis sparingly for emphasis (e.g., ✨, 🌿, 💡, 🎓, 🚀, 💬, 💖)."
+        "7. Whenever an opportunity has an application deadline, include it naturally in your response. If the exact date is available, mention it. If only the application period is known, mention that. If no deadline is available, advise the user to check the official website for the latest dates.\n"
     )
 
     messages = [{"role": "system", "content": system_prompt}]
@@ -125,7 +169,9 @@ def respond(message, history):
         top_p=0.9,
     )
 
-    return response.choices[0].message.content.strip()
+    reply = response.choices[0].message.content.strip()
+    calendar_link = create_google_calendar_link(reply)
+    return reply + calendar_link
 #Launch------------------------------------------------------------------------
 
 # --- Launch Interface ---
