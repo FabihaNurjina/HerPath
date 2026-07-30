@@ -195,11 +195,9 @@ def respond(message, history):
 
 # --- Launch Interface ---
 with gr.Blocks(
-    my_theme = gr.themes.Soft(
-        primary_hue="purple",
-        secondary_hue="violet",
-        background_fill_primary="#f8f5fa",    # Color of secondary highlights and badges
-        neutral_hue="slate"        # Background neutral tones
+    my_theme = gr.themes.Soft( primary_hue="purple", 
+                              secondary_hue="violet", 
+                              background_fill_primary="#f8f5fa", #Light mode background background_fill_primary_dark="#120e17" #Dark mode background )       # Background neutral tones
     )
 )as demo:
 
@@ -229,7 +227,7 @@ with gr.Blocks(
     gr.ChatInterface(respond)
 
 # 4. Launch the application
-demo.launch(theme=my_theme)
+demo.launch()
 
 
 # TODO: This is just a starting point! Customize the system prompt,
