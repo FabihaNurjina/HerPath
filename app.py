@@ -95,7 +95,7 @@ cleaned_chunks = preprocess_text(knowledge_text)
 
 chunk_embeddings = create_embeddings(cleaned_chunks)
 
---------------
+
 
 def create_google_calendar_link(response_text):
     """
@@ -132,7 +132,7 @@ def create_google_calendar_link(response_text):
 
     except:
         return ""
--------------------------
+
 #Response Function------------------------------------------------------------------
 def respond(message, history):
    
