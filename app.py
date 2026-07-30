@@ -201,11 +201,12 @@ my_theme = gr.themes.Soft(
 
 # Messages colors
 custom_css = """
+body { background-color: #b698ed !important; }
 .message.user { background-color: #7c3aed !important; color: white !important; }
 .message.bot { background-color: #ebdcf7 !important; color: #2e1065 !important; }
 .dark .message.user { background-color: #5b21b6 !important; }
 .dark .message.bot { background-color: #2e1065 !important; color: #f3e8ff !important; }
-.body { background-color: #b698ed !important; }
+
 """
 
 # Initialize the interface
