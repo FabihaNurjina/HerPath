@@ -109,7 +109,9 @@ system_prompt = (
     "5. Keep responses concise, well-structured, and encouraging.\n"
     "6. Use tasteful, aesthetic emojis sparingly for emphasis (e.g., ✨, 🌿, 💡, 🎓, 🚀, 💬, 💖)."
 )
-    messages = [{"role": "system", "content": system_prompt}]
+
+messages = [{"role": "system", "content": system_prompt}]
+
 #History--------------------------------------------------------------------------
     if history:
         messages.extend(history)
