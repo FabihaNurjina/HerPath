@@ -194,12 +194,23 @@ def respond(message, history):
 #Launch------------------------------------------------------------------------
 
 # --- Launch Interface ---
-with gr.Blocks(
-    my_theme = gr.themes.Soft( primary_hue="purple", 
-                              secondary_hue="violet", 
-                              background_fill_primary="#f8f5fa", #Light mode background background_fill_primary_dark="#120e17" #Dark mode background )       # Background neutral tones
-    )
-)as demo:
+my_theme = gr.themes.Soft(
+    primary_hue="purple",
+    secondary_hue="violet",
+    background_fill_primary="#f8f5fa",       #Light mode background
+    background_fill_primary_dark="#120e17"  #Dark mode background
+)
+
+# Messages colors
+custom_css = """
+.message.user { background-color: #7c3aed !important; color: white !important; }
+.message.bot { background-color: #ebdcf7 !important; color: #2e1065 !important; }
+.dark .message.user { background-color: #5b21b6 !important; }
+.dark .message.bot { background-color: #2e1065 !important; color: #f3e8ff !important; }
+"""
+
+# Initialize the interface
+with gr.Blocks(theme=my_theme, css=custom_css) as demo:
 
     # 1. Cover Banner (Top)
     cover_image = gr.Image(
@@ -227,7 +238,7 @@ with gr.Blocks(
     gr.ChatInterface(respond)
 
 # 4. Launch the application
-demo.launch()
+demo.launch(theme=my_theme)
 
 
 # TODO: This is just a starting point! Customize the system prompt,
