@@ -125,7 +125,7 @@ if history:
         top_p=0.9,
     )
 
-    return response.choices[0].message.content.strip()
+        return response.choices[0].message.content.strip()
 #Launch------------------------------------------------------------------------
 
 # --- Launch Interface ---
