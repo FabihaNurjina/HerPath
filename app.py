@@ -168,10 +168,22 @@ def respond(message, history):
         temperature =.7,
         top_p=0.9,
     )
-
     reply = response.choices[0].message.content.strip()
     calendar_link = create_google_calendar_link(reply)
-    return reply + calendar_link
+    if calendar_link:
+        reminder_section = calendar_link
+    else:
+        reminder_section = """
+
+    📅 **Deadline Reminder**
+
+    ⚠️ No application deadline is currently available for this opportunity.
+
+    🌐 Please check the official website for the latest application deadlines and updates.
+    """
+
+    return reply + reminder_section
+    
 #Launch------------------------------------------------------------------------
 
 # --- Launch Interface ---
