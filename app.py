@@ -110,7 +110,7 @@ system_prompt = (
     "6. Use tasteful, aesthetic emojis sparingly for emphasis (e.g., ✨, 🌿, 💡, 🎓, 🚀, 💬, 💖)."
 )
 
-    messages = [{"role": "system", "content": system_prompt}]
+messages = [{"role": "system", "content": system_prompt}]
 
 #History--------------------------------------------------------------------------
     if history:
