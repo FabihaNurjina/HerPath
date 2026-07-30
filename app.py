@@ -194,12 +194,14 @@ def respond(message, history):
 #Launch------------------------------------------------------------------------
 
 # --- Launch Interface ---
-my_theme = gr.themes.Soft(
-    primary_hue="purple",
-    secondary_hue="violet",
-    background_fill_primary="#f8f5fa",    # Color of secondary highlights and badges
+with gr.Blocks(
+    my_theme = gr.themes.Soft(
+        primary_hue="purple",
+        secondary_hue="violet",
+        background_fill_primary="#f8f5fa",    # Color of secondary highlights and badges
         neutral_hue="slate"        # Background neutral tones
     )
+)as demo:
 
     # 1. Cover Banner (Top)
     cover_image = gr.Image(
