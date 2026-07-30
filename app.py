@@ -118,14 +118,14 @@ if history:
 
     messages.append({"role": "user", "content": message})
 #Calling Model--------------------------------------------------------------------
-        response = client.chat_completion(
-            messages,
-            max_tokens=500,
-            temperature =.7,
-            top_p=0.9,
-        )
+    response = client.chat_completion(
+        messages,
+        max_tokens=500,
+        temperature =.7,
+        top_p=0.9,
+    )
 
-        return response.choices[0].message.content.strip()
+    return response.choices[0].message.content.strip()
 #Launch------------------------------------------------------------------------
 
 # --- Launch Interface ---
