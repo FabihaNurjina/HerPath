@@ -25,9 +25,9 @@ def preprocess_text(text):
       cleaned_chunks.append(cleaned_chunk)
 
   # Print cleaned_chunks
-  print(cleaned_chunks)
+  #print(cleaned_chunks)
   # Print the length of cleaned_chunks
-  print(len(cleaned_chunks))
+  #print(len(cleaned_chunks))
 
   # Return the cleaned_chunks
   return cleaned_chunks
@@ -37,10 +37,10 @@ def create_embeddings(text_chunks):
   chunk_embeddings = model.encode(text_chunks, convert_to_tensor=True) # Replace ... with the text_chunks list
 
   # Print the chunk embeddings
-  print(chunk_embeddings)
+  #print(chunk_embeddings)
 
   # Print the shape of chunk_embeddings
-  print(chunk_embeddings.shape)
+  #print(chunk_embeddings.shape)
 
 
   # Return the chunk_embeddings
@@ -61,14 +61,14 @@ def get_top_chunks(query, chunk_embeddings, text_chunks):
   similarities = torch.matmul(chunk_embeddings_normalized, query_embedding_normalized) # Complete this line
 
   # Print the similarities
-  print(similarities)
+  #print(similarities)
 
 
   # Find the indices of the 3 chunks with highest similarity scores
   top_indices = torch.topk(similarities, k=3).indices
 
   # Print the top indices
-  print(top_indices)
+  #print(top_indices)
 
   # Create an empty list to store the most relevant chunks
   top_chunks = []
@@ -80,18 +80,19 @@ def get_top_chunks(query, chunk_embeddings, text_chunks):
   # Return the list of most relevant chunks
   return top_chunks
 
-#Loading---------------------------------------------------------------------
-with open("knowledge.txt", "r", encoding="utf-8") as file:
-  # Read the entire contents of the file and store it in a variable
-  knowledge_text = file.read()
-
-# Call the preprocess_text function and store the result in a cleaned_chunks variable
-cleaned_chunks = preprocess_text(knowledge_text)
-
-chunk_embeddings = create_embeddings(cleaned_chunks)
-
 #Response Function------------------------------------------------------------------
 def respond(message, history):
+    #Loading---------------------------------------------------------------------
+    with open("knowledge.txt", "r", encoding="utf-8") as file:
+      # Read the entire contents of the file and store it in a variable
+      knowledge_text = file.read()
+
+    # Call the preprocess_text function and store the result in a cleaned_chunks variable
+    cleaned_chunks = preprocess_text(knowledge_text)
+
+    chunk_embeddings = create_embeddings(cleaned_chunks)
+
+    #Response Function added------------------------------------------------------------------
     top_results = get_top_chunks( message, chunk_embeddings, cleaned_chunks)
     context = "\n\n".join(top_results)
     
