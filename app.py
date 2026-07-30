@@ -65,7 +65,7 @@ def get_top_chunks(query, chunk_embeddings, text_chunks):
 
 
   # Find the indices of the 3 chunks with highest similarity scores
-  top_indices = torch.topk(similarities, k=5).indices
+  top_indices = torch.topk(similarities, k=3).indices
 
   # Print the top indices
   print(top_indices)
