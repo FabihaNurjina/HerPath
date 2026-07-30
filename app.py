@@ -110,22 +110,22 @@ system_prompt = (
     "6. Use tasteful, aesthetic emojis sparingly for emphasis (e.g., ✨, 🌿, 💡, 🎓, 🚀, 💬, 💖)."
 )
 
-messages = [{"role": "system", "content": system_prompt}]
+    messages = [{"role": "system", "content": system_prompt}]
 
 #History--------------------------------------------------------------------------
-if history:
-    messages.extend(history)
+    if history:
+        messages.extend(history)
 
-    messages.append({"role": "user", "content": message})
+        messages.append({"role": "user", "content": message})
 #Calling Model--------------------------------------------------------------------
-    response = client.chat_completion(
-        messages,
-        max_tokens=500,
-        temperature =.7,
-        top_p=0.9,
-    )
+        response = client.chat_completion(
+            messages,
+            max_tokens=500,
+            temperature =.7,
+            top_p=0.9,
+        )
 
-    return response.choices[0].message.content.strip()
+        return response.choices[0].message.content.strip()
 #Launch------------------------------------------------------------------------
 
 # --- Launch Interface ---
