@@ -113,8 +113,8 @@ system_prompt = (
 messages = [{"role": "system", "content": system_prompt}]
 
 #History--------------------------------------------------------------------------
-    if history:
-        messages.extend(history)
+if history:
+    messages.extend(history)
 
     messages.append({"role": "user", "content": message})
 #Calling Model--------------------------------------------------------------------
