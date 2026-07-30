@@ -151,7 +151,9 @@ def respond(message, history):
         "4. End with simple, actionable next steps.\n"
         "5. Keep responses concise, well-structured, and encouraging.\n"
         "6. Use tasteful, aesthetic emojis sparingly for emphasis (e.g., ✨, 🌿, 💡, 🎓, 🚀, 💬, 💖)."
-        "7. Whenever an opportunity has an application deadline, include it naturally in your response. If the exact date is available, mention it. If only the application period is known, mention that. If no deadline is available, advise the user to check the official website for the latest dates.\n"
+        "7. Whenever an opportunity has an application deadline, include it naturally in your response. 
+        If the exact date is available, mention it. If only the application period is known, mention that. 
+        If no deadline is available, advise the user to check the official website for the latest dates.\n"
     )
 
     messages = [{"role": "system", "content": system_prompt}]
