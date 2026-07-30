@@ -205,6 +205,7 @@ custom_css = """
 .message.bot { background-color: #ebdcf7 !important; color: #2e1065 !important; }
 .dark .message.user { background-color: #5b21b6 !important; }
 .dark .message.bot { background-color: #2e1065 !important; color: #f3e8ff !important; }
+.body { background-color: #b698ed !important; }
 """
 
 # Initialize the interface
