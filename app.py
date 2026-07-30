@@ -196,9 +196,7 @@ def respond(message, history):
 # --- Launch Interface ---
 my_theme = gr.themes.Soft(
     primary_hue="purple",
-    secondary_hue="violet",
-    background_fill_primary="#f8f5fa",       #Light mode background
-    background_fill_primary_dark="#120e17"  #Dark mode background
+    secondary_hue="violet"
 )
 
 # Messages colors
