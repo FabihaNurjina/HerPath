@@ -169,20 +169,27 @@ def respond(message, history):
         top_p=0.9,
     )
     reply = response.choices[0].message.content.strip()
+
     calendar_link = create_google_calendar_link(reply)
-    if calendar_link:
-        reminder_section = calendar_link
-    else:
-        reminder_section = """
+
+    # Only show reminder for opportunity recommendations
+    if ("Application Period" in reply or
+        "Official Link" in reply or
+        "Eligibility" in reply or
+        "Benefits" in reply):
+        if calendar_link:
+            reply += calendar_link
+        else:
+            reply += """
 
     📅 **Deadline Reminder**
 
-    ⚠️ No application deadline is currently available for this opportunity.
+    No application deadline is currently available for this opportunity.
 
-    🌐 Please check the official website for the latest application deadlines and updates.
+    🌐 Check the official website for the latest application deadlines and updates.
     """
 
-    return reply + reminder_section
+    return reply
     
 #Launch------------------------------------------------------------------------
 
