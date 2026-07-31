@@ -194,63 +194,83 @@ def respond(message, history):
 #Launch------------------------------------------------------------------------
 
 # --- Launch Interface ---
+
 my_theme = gr.themes.Soft(
     primary_hue="purple",
-    secondary_hue="violet",
-).set(
-    # Main App Background 
-    background_fill_primary="#C8BBDC",
-    background_fill_secondary="#C8BBDC",
-    
-    # Text outside chat
-    body_text_color="white",
-    body_text_color_subdued="white",
-    
-    # Input Area & Buttons Styling
-    input_background_fill="#F0EEF7",
-    button_primary_background_fill="#7C71B2",
-    button_primary_text_color="white",
-    
-    # Custom adjustments for message boxes inside the component token trees
-    block_background_fill="#A193C6",
-    block_label_text_color="white",
-    border_color_primary="#7C71B2"
+    secondary_hue="violet"
 )
 
-# CSS code for details
+# Bulletproof Layout CSS — Direct styling only, no engine overrides
 custom_css = """
-/* Force the central chat frame layout to your deeper purple #A193C6 */
-.chatbot, [class*="chatbot"], .gradio-chatbot {
-    background-color: #A193C6 !important;
-    background: #A193C6 !important;
+/*  MAIN APP BACKGROUND (Medium Lavender #C8BBDC) */
+html, body, .gradio-container, #root, [class*="gradio-container"], div[data-testid="main-panel"], .main-ui-grid, .sidebar { 
+    background-color: #C8BBDC !important; 
+    background: #C8BBDC !important;
 }
 
-/* User Messages — Darkest purple accent #7C71B2 with white text */
-.user, [class*="user"] { 
+/* HEADERS AND DESCRIPTION TEXT (Forcing them to White so they stand out) */
+.gradio-container p, .gradio-container h1, .gradio-container h2, .gradio-container span, .gradio-container .markdown-text {
+    color: white !important;
+}
+
+/* CENTRAL CHAT PANEL BACKGROUND (Deeper Purple #A193C6) */
+.chatbot, .message-wrap, .bubble-wrap, div.message-list, div[id="chatbot"], .gradio-chatbot, div[data-testid="block-container"] {
+    background-color: #A193C6 !important;
+    background: #A193C6 !important;
+    border: none !important;
+}
+
+/* USER MESSAGES (Darkest Purple Accent #7C71B2 with white text) */
+.user, [class*="user"], .message.user { 
     background-color: #7C71B2 !important; 
     color: white !important; 
 }
-.user p, .user span { color: white !important; }
+.user p, .user span, .user strong { color: white !important; }
 
-/* Bot Messages — Lightest pastel lavender #F0EEF7 with dark readable text */
-.bot, [class*="bot"], blockquote, pre, code, .prose { 
+/* BOT MESSAGES & DEADLINE BLOCKS (Lightest Pastel Lavender #F0EEF7 with dark readable text) */
+.bot, [class*="bot"], .message.bot, blockquote, pre, code, .prose, 
+.bot p, .bot span, .bot strong, .bot li, .bot div { 
     background-color: #F0EEF7 !important; 
     background: #F0EEF7 !important;
     color: #251E3E !important; 
 }
-.bot p, .bot span, .bot strong, .bot li { color: #251E3E !important; }
 
-/* Quick-suggest cards and submit arrow button — Vibrant purple #7C71B2 */
-.chat-suggestions button, [class*="suggestion"], .submit-button, button[class*="submit"] {
+/* QUICK SUGGESTION CARDS AND CLONED CHAT BUTTONS */
+.chat-suggestions button, [class*="suggestion"], .chatbot .slots button, .form button.primary {
+    background-color: #7C71B2 !important;
+    background: #7C71B2 !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* TEXT INPUT FIELD */
+.form, .input-container, div[class*="input-box"], textarea {
+    background-color: #F0EEF7 !important;
+    background: #F0EEF7 !important;
+    color: #251E3E !important;
+    border: 1px solid #7C71B2 !important;
+    border-radius: 8px !important;
+}
+textarea::placeholder { color: #7C71B2 !important; opacity: 0.7; }
+
+/* SUBMIT BUTTON & GENERATING SPINNER WRAPPERS */
+.submit-button, button[class*="submit"], div[class*="pending"], .generating, [class*="loading"] {
     background-color: #7C71B2 !important;
     background: #7C71B2 !important;
     color: white !important;
 }
 
-/* Force fix for the loading spinner wrapper to stop it from turning grey */
-div[class*="pending"], .generating, [class*="loading"] {
-    background-color: #7C71B2 !important;
-    color: white !important;
+/* LINK FIX INSIDE CHAT */
+.message.bot a {
+    color: #7C71B2 !important;
+    text-decoration: underline !important;
+}
+
+/* TRANSPARENT WRAPPERS FOR LOGO AND BANNER */
+div[data-testid="block-container"] img { 
+    background: transparent !important; 
+    border: none !important; 
+    box-shadow: none !important; 
 }
 """
 
