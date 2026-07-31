@@ -201,7 +201,7 @@ my_theme = gr.themes.Soft(
 
 # Messages, background, 
 custom_css = """
-/* 1. Main app background — Light mode (#F0EEF7) */
+/Main app background — Light mode (#F0EEF7) */
 body, html, .gradio-container, div[data-testid="main-panel"], .main-ui-grid, .sidebar {
     background-color: #F0EEF7 !important;
     background: #F0EEF7 !important;
@@ -236,6 +236,18 @@ body, html, .gradio-container, div[data-testid="main-panel"], .main-ui-grid, .si
 }
 .dark .message.user { background-color: #7C71B2 !important; }
 .dark .message.bot { background-color: #312A51 !important; color: #E1D8EB !important; }
+/* Messages panel color */
+.chatbot, .message-wrap, .bubble-wrap, div.message-list, div[class*="message-wrap"] {
+    background-color: #E1D8EB !important;
+    background: #E1D8EB !important;
+}
+
+/* Total messages panel color */
+div[id="chatbot"], .gradio-chatbot, .chatbot-container {
+    background-color: #E1D8EB !important;
+    background: #E1D8EB !important;
+}
+
 """
 
 # Initialize the interface
