@@ -200,34 +200,51 @@ my_theme = gr.themes.Soft(
     secondary_hue="violet"
 )
 
-# Bulletproof Layout CSS — Direct styling only, no engine overrides
+# CSS Setup
 custom_css = """
-/*  MAIN APP BACKGROUND (Medium Lavender #C8BBDC) */
-html, body, .gradio-container, #root, [class*="gradio-container"], div[data-testid="main-panel"], .main-ui-grid, .sidebar { 
-    background-color: #C8BBDC !important; 
-    background: #C8BBDC !important;
+/* GRADIENT BACKGROUND FOR THE WHOLE APP (Smooth Purple Transitions) */
+:root, html, body, .gradio-container, #root, [class*="gradio-container"], div[data-testid="main-panel"], .main-ui-grid, .sidebar { 
+    background: linear-gradient(-45deg, #A193C6, #7C71B2, #4A3E7A, #7C71B2) !important;
+    background-size: 400% 400% !important;
+    animation: gradientMove 12s ease infinite !important;
 }
 
-/* HEADERS AND DESCRIPTION TEXT (Forcing them to White so they stand out) */
+/* Keyframes to animate the background gradient smoothly */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* DESTROY WHITE WRAPPERS AROUND LOGO, TITLE, AND DESCRIPTION */
+div[class*="row"], div[class*="column"], .form, [data-testid="block-container"], .tabs {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Force the main text description and titles to stay White on the new dark background */
 .gradio-container p, .gradio-container h1, .gradio-container h2, .gradio-container span, .gradio-container .markdown-text {
     color: white !important;
 }
 
-/* CENTRAL CHAT PANEL BACKGROUND (Deeper Purple #A193C6) */
-.chatbot, .message-wrap, .bubble-wrap, div.message-list, div[id="chatbot"], .gradio-chatbot, div[data-testid="block-container"] {
-    background-color: #A193C6 !important;
-    background: #A193C6 !important;
-    border: none !important;
+/* CENTRAL CHAT PANEL BACKGROUND (Now Using Your Soft Medium Lavender #C8BBDC) */
+.chatbot, .message-wrap, .bubble-wrap, div.message-list, div[id="chatbot"], .gradio-chatbot {
+    background-color: #C8BBDC !important;
+    background: #C8BBDC !important;
+    border: 1px solid #7C71B2 !important;
+    border-radius: 12px !important;
 }
 
-/* USER MESSAGES (Darkest Purple Accent #7C71B2 with white text) */
+/* USER MESSAGES (Kept as your Darkest Purple Accent #7C71B2 with white text) */
 .user, [class*="user"], .message.user { 
     background-color: #7C71B2 !important; 
     color: white !important; 
 }
 .user p, .user span, .user strong { color: white !important; }
 
-/* BOT MESSAGES & DEADLINE BLOCKS (Lightest Pastel Lavender #F0EEF7 with dark readable text) */
+/* BOT MESSAGES & DEADLINE BLOCKS (Clean Lightest Pastel Lavender #F0EEF7) */
 .bot, [class*="bot"], .message.bot, blockquote, pre, code, .prose, 
 .bot p, .bot span, .bot strong, .bot li, .bot div { 
     background-color: #F0EEF7 !important; 
@@ -235,7 +252,7 @@ html, body, .gradio-container, #root, [class*="gradio-container"], div[data-test
     color: #251E3E !important; 
 }
 
-/* QUICK SUGGESTION CARDS AND CLONED CHAT BUTTONS */
+/* QUICK SUGGESTION CARDS (Vibrant Purple #7C71B2) */
 .chat-suggestions button, [class*="suggestion"], .chatbot .slots button, .form button.primary {
     background-color: #7C71B2 !important;
     background: #7C71B2 !important;
@@ -243,8 +260,8 @@ html, body, .gradio-container, #root, [class*="gradio-container"], div[data-test
     border: none !important;
 }
 
-/* TEXT INPUT FIELD */
-.form, .input-container, div[class*="input-box"], textarea {
+/* TEXT INPUT FIELD AT THE BOTTOM (Light and clean) */
+textarea, div[class*="input-box"], .input-container {
     background-color: #F0EEF7 !important;
     background: #F0EEF7 !important;
     color: #251E3E !important;
@@ -253,7 +270,7 @@ html, body, .gradio-container, #root, [class*="gradio-container"], div[data-test
 }
 textarea::placeholder { color: #7C71B2 !important; opacity: 0.7; }
 
-/* SUBMIT BUTTON & GENERATING SPINNER WRAPPERS */
+/* SUBMIT BUTTON & LOADING SPINNER */
 .submit-button, button[class*="submit"], div[class*="pending"], .generating, [class*="loading"] {
     background-color: #7C71B2 !important;
     background: #7C71B2 !important;
@@ -266,7 +283,7 @@ textarea::placeholder { color: #7C71B2 !important; opacity: 0.7; }
     text-decoration: underline !important;
 }
 
-/* TRANSPARENT WRAPPERS FOR LOGO AND BANNER */
+/* TRANSPARENT IMAGES */
 div[data-testid="block-container"] img { 
     background: transparent !important; 
     border: none !important; 
