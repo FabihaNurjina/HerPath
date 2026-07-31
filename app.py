@@ -199,14 +199,43 @@ my_theme = gr.themes.Soft(
     secondary_hue="violet"
 )
 
-# Messages colors
+# Messages, background, 
 custom_css = """
-body { background-color: #D491FF !important; }
-.message.user { background-color: #7c3aed !important; color: white !important; }
-.message.bot { background-color: #ebdcf7 !important; color: #2e1065 !important; }
-.dark .message.user { background-color: #5b21b6 !important; }
-.dark .message.bot { background-color: #2e1065 !important; color: #f3e8ff !important; }
+/* 1. Main app background — Light mode (#F0EEF7) */
+body, html, .gradio-container, div[data-testid="main-panel"], .main-ui-grid, .sidebar {
+    background-color: #F0EEF7 !important;
+    background: #F0EEF7 !important;
+}
 
+/Central Dark Chat Wrapper — Turning it into your soft #E1D8EB shade */
+.chatbot, div[data-testid="block-container"], .form, .panel {
+    background-color: #E1D8EB !important;
+    background: #E1D8EB !important;
+    border: 1px solid #A193C6 !important;
+}
+
+/User messages — Using your darkest rich shade #7C71B2 */
+.message.user { background-color: #7C71B2 !important; color: white !important; }
+
+/Bot messages — Using your soft medium-light shade #C8BBDC */
+.message.bot { background-color: #C8BBDC !important; color: #312A51 !important; }
+
+/Bottom suggested question cards — Matching your #A193C6 tone */
+.chat-suggestions button, .suggestion-button {
+    background-color: #A193C6 !important;
+    color: #312A51 !important;
+    border: none !important;
+}
+
+/Dark mode fallbacks (keeps layout readable if system theme flips) */
+.dark body, .dark html, .dark .gradio-container, .dark div[data-testid="main-panel"] {
+    background-color: #1A1726 !important;
+}
+.dark .chatbot, .dark div[data-testid="block-container"] {
+    background-color: #252136 !important;
+}
+.dark .message.user { background-color: #7C71B2 !important; }
+.dark .message.bot { background-color: #312A51 !important; color: #E1D8EB !important; }
 """
 
 # Initialize the interface
