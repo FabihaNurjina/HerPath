@@ -202,17 +202,21 @@ my_theme = gr.themes.Soft(
 
 # --- CSS code for details in Interface ---
 custom_css = """
-/* GRADIENT */
-:root, html, body, #root, .gradio-container, div[data-testid="main-panel"], .main-ui-grid {
+html:before, body:before, .gradio-container:before {
+    content: "" !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
     background: linear-gradient(135deg, #736686 0%, #9889A5 50%, #736686 100%) !important;
-    background-attachment: fixed !important;
+    z-index: -999 !important;
 }
 
-.gradio-container > div, .main-ui-grid > div, [class*="gradio-container"] {
-    background: transparent !important;
+html, body, .gradio-container, #root, div[data-testid="main-panel"], .main-ui-grid, .sidebar {
     background-color: transparent !important;
+    background: transparent !important;
 }
-
 
 div[class*="row"], div[class*="column"], [data-testid="block-container"], .tabs, 
 div[class*="gap"], .form, .block, [class*="gr-box"], [class*="gr-panel"], .metadata, 
