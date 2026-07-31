@@ -207,7 +207,8 @@ html, body, .gradio-container, #root, [class*="gradio-container"], div[data-test
 }
 
 div[class*="row"], div[class*="column"], [data-testid="block-container"], .tabs, 
-div[class*="gap"], .form, .block, [class*="gr-box"], [class*="gr-panel"], .metadata, div[class*="wrapper"] {
+div[class*="gap"], .form, .block, [class*="gr-box"], [class*="gr-panel"], .metadata, 
+div[class*="wrapper"], .padded, .gap, .container, .layout {
     background-color: transparent !important;
     background: transparent !important;
     border: none !important;
