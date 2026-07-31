@@ -200,90 +200,72 @@ my_theme = gr.themes.Soft(
     secondary_hue="violet"
 )
 
-# CSS Setup
+# --- CSS code for details in Interface ---
 custom_css = """
-/* GRADIENT BACKGROUND FOR THE WHOLE APP (Smooth Purple Transitions) */
-:root, html, body, .gradio-container, #root, [class*="gradio-container"], div[data-testid="main-panel"], .main-ui-grid, .sidebar { 
-    background: linear-gradient(-45deg, #A193C6, #7C71B2, #4A3E7A, #7C71B2) !important;
-    background-size: 400% 400% !important;
-    animation: gradientMove 12s ease infinite !important;
+html, body, .gradio-container, #root, [class*="gradio-container"], div[data-testid="main-panel"], .main-ui-grid, .sidebar { 
+    background: linear-gradient(135deg, #736686 0%, #9889A5 50%, #736686 100%) !important;
 }
 
-/* Keyframes to animate the background gradient smoothly */
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* DESTROY WHITE WRAPPERS AROUND LOGO, TITLE, AND DESCRIPTION */
-div[class*="row"], div[class*="column"], .form, [data-testid="block-container"], .tabs {
+div[class*="row"], div[class*="column"], [data-testid="block-container"], .tabs, 
+div[class*="gap"], .form, .block, [class*="gr-box"], [class*="gr-panel"], .metadata, div[class*="wrapper"] {
     background-color: transparent !important;
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
 
-/* Force the main text description and titles to stay White on the new dark background */
-.gradio-container p, .gradio-container h1, .gradio-container h2, .gradio-container span, .gradio-container .markdown-text {
+.gradio-container p, .gradio-container h1, .gradio-container h2, .gradio-container span, .gradio-container .markdown-text, .gradio-container label, .gradio-container h3 {
     color: white !important;
 }
 
-/* CENTRAL CHAT PANEL BACKGROUND (Now Using Your Soft Medium Lavender #C8BBDC) */
-.chatbot, .message-wrap, .bubble-wrap, div.message-list, div[id="chatbot"], .gradio-chatbot {
-    background-color: #C8BBDC !important;
-    background: #C8BBDC !important;
-    border: 1px solid #7C71B2 !important;
+.chatbot, .message-wrap, .bubble-wrap, div.message-list, div[id="chatbot"], .gradio-chatbot, .chat-view {
+    background-color: #A696B3 !important;
+    background: #A696B3 !important;
+    border: 1px solid #736686 !important;
     border-radius: 12px !important;
 }
 
-/* USER MESSAGES (Kept as your Darkest Purple Accent #7C71B2 with white text) */
 .user, [class*="user"], .message.user { 
-    background-color: #7C71B2 !important; 
-    color: white !important; 
+    background-color: #C4B4C8 !important; 
+    color: #2A2235 !important; 
 }
-.user p, .user span, .user strong { color: white !important; }
+.user p, .user span, .user strong { color: #2A2235 !important; }
 
-/* BOT MESSAGES & DEADLINE BLOCKS (Clean Lightest Pastel Lavender #F0EEF7) */
 .bot, [class*="bot"], .message.bot, blockquote, pre, code, .prose, 
 .bot p, .bot span, .bot strong, .bot li, .bot div { 
-    background-color: #F0EEF7 !important; 
-    background: #F0EEF7 !important;
-    color: #251E3E !important; 
+    background-color: #E0CFDB !important; 
+    background: #E0CFDB !important;
+    color: #2A2235 !important; 
 }
 
-/* QUICK SUGGESTION CARDS (Vibrant Purple #7C71B2) */
-.chat-suggestions button, [class*="suggestion"], .chatbot .slots button, .form button.primary {
-    background-color: #7C71B2 !important;
-    background: #7C71B2 !important;
-    color: white !important;
+.chat-suggestions button, [class*="suggestion"], .chatbot .slots button, .form button.primary, .examples button, .example-btn, button[class*="slot"] {
+    background-color: #C4B4C8 !important;
+    background: #C4B4C8 !important;
+    color: #2A2235 !important;
     border: none !important;
+    box-shadow: none !important;
 }
 
-/* TEXT INPUT FIELD AT THE BOTTOM (Light and clean) */
 textarea, div[class*="input-box"], .input-container {
-    background-color: #F0EEF7 !important;
-    background: #F0EEF7 !important;
-    color: #251E3E !important;
-    border: 1px solid #7C71B2 !important;
+    background-color: #E0CFDB !important;
+    background: #E0CFDB !important;
+    color: #2A2235 !important;
+    border: 1px solid #736686 !important;
     border-radius: 8px !important;
 }
-textarea::placeholder { color: #7C71B2 !important; opacity: 0.7; }
+textarea::placeholder { color: #736686 !important; opacity: 0.6; }
 
-/* SUBMIT BUTTON & LOADING SPINNER */
 .submit-button, button[class*="submit"], div[class*="pending"], .generating, [class*="loading"] {
-    background-color: #7C71B2 !important;
-    background: #7C71B2 !important;
+    background-color: #736686 !important;
+    background: #736686 !important;
     color: white !important;
 }
 
-/* LINK FIX INSIDE CHAT */
 .message.bot a {
-    color: #7C71B2 !important;
+    color: #736686 !important;
     text-decoration: underline !important;
 }
 
-/* TRANSPARENT IMAGES */
 div[data-testid="block-container"] img { 
     background: transparent !important; 
     border: none !important; 
