@@ -202,7 +202,10 @@ my_theme = gr.themes.Soft(
 
 # --- CSS code for details in Interface ---
 custom_css = """
-html, body, .gradio-container, #root, [class*="gradio-container"], div[data-testid="main-panel"], .main-ui-grid, .sidebar { 
+/* GLOBAL VARIABLE GRADIENT OVERRIDE */
+:root, html, body, .gradio-container, #root { 
+    --background-fill-primary: linear-gradient(135deg, #736686 0%, #9889A5 50%, #736686 100%) !important;
+    --body-background-fill: linear-gradient(135deg, #736686 0%, #9889A5 50%, #736686 100%) !important;
     background: linear-gradient(135deg, #736686 0%, #9889A5 50%, #736686 100%) !important;
 }
 
