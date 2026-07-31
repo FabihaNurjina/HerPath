@@ -201,7 +201,7 @@ my_theme = gr.themes.Soft(
 
 # Messages colors
 custom_css = """
-body { background-color: #f2f1f6 !important; }
+body { background-color: D491FF !important; }
 .message.user { background-color: #7c3aed !important; color: white !important; }
 .message.bot { background-color: #ebdcf7 !important; color: #2e1065 !important; }
 .dark .message.user { background-color: #5b21b6 !important; }
