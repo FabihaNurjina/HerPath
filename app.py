@@ -205,7 +205,7 @@ custom_css = """
 /* MAIN BACKGROUND */
 :root, html, body, #root, [class*="gradio-container"] { 
     background-image: linear-gradient(135deg, #736686 0%, #9889A5 100%) !important;
-    background-color: #736686 !important;
+    background-color: #f2f1f6 !important;
 }
 
 
