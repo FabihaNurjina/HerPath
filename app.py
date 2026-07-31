@@ -210,7 +210,7 @@ body { background-color: #f2f1f6 !important; }
 """
 
 # Initialize the interface
-with gr.Blocks(theme=my_theme, css=custom_css) as demo:
+with gr.Blocks() as demo:
 
     # 1. Cover Banner (Top)
     cover_image = gr.Image(
@@ -245,7 +245,7 @@ with gr.Blocks(theme=my_theme, css=custom_css) as demo:
                 cache_examples=False)
 
 # 4. Launch the application
-demo.launch(theme=my_theme)
+demo.launch(theme=my_theme, css=custom_css)
 
 
 # TODO: This is just a starting point! Customize the system prompt,
