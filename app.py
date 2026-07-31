@@ -10,7 +10,7 @@ from datetime import datetime
 
 #Initialize models---------------------------------------------------------------
 model = SentenceTransformer('all-MiniLM-L6-v2')
-client = InferenceClient("Qwen/Qwen2.5-7B-Instruct")
+client = InferenceClient("Qwen/Qwen2.5-Coder-32B-Instruct")
 
 #Preprocessing-----------------------------------------------------------------------
 def preprocess_text(text):
