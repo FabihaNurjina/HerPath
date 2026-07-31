@@ -199,59 +199,79 @@ my_theme = gr.themes.Soft(
     secondary_hue="violet"
 )
 
-# Messages, background, 
+# Contrast Purple Palette CSS Setup
 custom_css = """
-/Main app background — Light mode (#F0EEF7) */
-body, html, .gradio-container, div[data-testid="main-panel"], .main-ui-grid, .sidebar {
-    background-color: #F0EEF7 !important;
-    background: #F0EEF7 !important;
+/* MAIN APP BACKGROUND (Medium Lavender) */
+html, body, .gradio-container, #root, [class*="gradio-container"], div[data-testid="main-panel"], .main-ui-grid, .sidebar { 
+    background-color: #C8BBDC !important; 
+    background: #C8BBDC !important;
 }
 
-/Central Dark Chat Wrapper — Turning it into your soft #E1D8EB shade */
-.chatbot, div[data-testid="block-container"], .form, .panel {
-    background-color: #E1D8EB !important;
-    background: #E1D8EB !important;
-    border: 1px solid #A193C6 !important;
+/* TEXT OUTSIDE THE CHAT (Main Title & Description to White) */
+.gradio-container p, .gradio-container h1, .gradio-container h2, .gradio-container span, .gradio-container .markdown-text {
+    color: white !important;
 }
 
-/User messages — Using your darkest rich shade #7C71B2 */
-.message.user { background-color: #7C71B2 !important; color: white !important; }
-
-/Bot messages — Using your soft medium-light shade #C8BBDC */
-.message.bot { background-color: #C8BBDC !important; color: #312A51 !important; }
-
-/Bottom suggested question cards — Matching your #A193C6 tone */
-.chat-suggestions button, .suggestion-button {
+/* CENTRAL CHAT PANEL BACKGROUND (Deeper Purple) */
+.chatbot, .message-wrap, .bubble-wrap, div.message-list, div[id="chatbot"], .gradio-chatbot, div[data-testid="block-container"] {
     background-color: #A193C6 !important;
-    color: #312A51 !important;
+    background: #A193C6 !important;
     border: none !important;
 }
 
-/Dark mode fallbacks (keeps layout readable if system theme flips) */
-.dark body, .dark html, .dark .gradio-container, .dark div[data-testid="main-panel"] {
-    background-color: #1A1726 !important;
-}
-.dark .chatbot, .dark div[data-testid="block-container"] {
-    background-color: #252136 !important;
-}
-.dark .message.user { background-color: #7C71B2 !important; }
-.dark .message.bot { background-color: #312A51 !important; color: #E1D8EB !important; }
-/* Messages panel color */
-.chatbot, .message-wrap, .bubble-wrap, div.message-list, div[class*="message-wrap"] {
-    background-color: #E1D8EB !important;
-    background: #E1D8EB !important;
+/* USER MESSAGES (Darkest Purple Accent) */
+.message.user { 
+    background-color: #7C71B2 !important; 
+    color: white !important; 
 }
 
-/* Total messages panel color */
-div[id="chatbot"], .gradio-chatbot, .chatbot-container {
-    background-color: #E1D8EB !important;
-    background: #E1D8EB !important;
+/* BOT MESSAGES (Lightest Pastel Lavender) */
+.message.bot { 
+    background-color: #F0EEF7 !important; 
+    color: #251E3E !important; 
 }
 
+/* QUICK SUGGESTION CARDS */
+.chat-suggestions button, .suggestion-button, .form button.primary {
+    background-color: #7C71B2 !important;
+    color: white !important;
+    border: none !important;
+}
+
+/* TEXT INPUT AREA AND PLACEHOLDERS */
+.form, .input-container, div[class*="input-box"], textarea {
+    background-color: #F0EEF7 !important;
+    background: #F0EEF7 !important;
+    color: #251E3E !important;
+    border: 1px solid #7C71B2 !important;
+    border-radius: 8px !important;
+}
+textarea::placeholder {
+    color: #7C71B2 !important;
+    opacity: 0.7;
+}
+
+/* SUBMIT ARROW BUTTON */
+.submit-button, button[class*="submit"], .clear-button {
+    background-color: #7C71B2 !important;
+    color: white !important;
+}
+
+/* DEADLINE REMINDERS AND MARKDOWN INSIDE BOT MESSAGES */
+.message.bot .prose, .message.bot p, .message.bot ul, .message.bot li, .message.bot strong, .message.bot div {
+    background-color: #F0EEF7 !important;
+    background: #F0EEF7 !important;
+    color: #251E3E !important;
+}
+.message.bot a {
+    color: #7C71B2 !important;
+    text-decoration: underline !important;
+}
 """
 
 # Initialize the interface
-with gr.Blocks() as demo:
+with gr.Blocks( ) as demo:
+
 
     # 1. Cover Banner (Top)
     cover_image = gr.Image(
