@@ -208,12 +208,18 @@ html, body, .gradio-container, #root, [class*="gradio-container"], div[data-test
 
 div[class*="row"], div[class*="column"], [data-testid="block-container"], .tabs, 
 div[class*="gap"], .form, .block, [class*="gr-box"], [class*="gr-panel"], .metadata, 
-div[class*="wrapper"], .padded, .gap, .container, .layout {
+div[class*="wrapper"], .padded, .gap, .container, .layout, fieldset, [class*="prose"] {
     background-color: transparent !important;
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
+
+.gradio-container .markdown-text, .gradio-container div[class*="prose"] {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
 
 .gradio-container p, .gradio-container h1, .gradio-container h2, .gradio-container span, .gradio-container .markdown-text, .gradio-container label, .gradio-container h3 {
     color: white !important;
