@@ -199,46 +199,55 @@ my_theme = gr.themes.Soft(
     secondary_hue="violet"
 )
 
-# Contrast Purple Palette CSS Setup
+# Gradient CSS Setup
 custom_css = """
-/* MAIN APP BACKGROUND (Medium Lavender) */
+/* GRADIENT BACKGROUND FOR THE WHOLE APP (Smooth Purple Transitions) */
 html, body, .gradio-container, #root, [class*="gradio-container"], div[data-testid="main-panel"], .main-ui-grid, .sidebar { 
-    background-color: #C8BBDC !important; 
-    background: #C8BBDC !important;
+    background: linear-gradient(-45deg, #F0EEF7, #E1D8EB, #C8BBDC, #E1D8EB) !important;
+    background-size: 400% 400% !important;
+    animation: gradientMove 15s ease infinite !important;
 }
 
-/* TEXT OUTSIDE THE CHAT (Main Title & Description to White) */
+/* Keyframes to animate the background gradient smoothly */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* TEXT OUTSIDE THE CHAT (Main Title & Description to White for visibility) */
 .gradio-container p, .gradio-container h1, .gradio-container h2, .gradio-container span, .gradio-container .markdown-text {
     color: white !important;
 }
 
-/* CENTRAL CHAT PANEL BACKGROUND (Deeper Purple) */
+/* CENTRAL CHAT PANEL BACKGROUND (Deeper Purple #A193C6) */
 .chatbot, .message-wrap, .bubble-wrap, div.message-list, div[id="chatbot"], .gradio-chatbot, div[data-testid="block-container"] {
     background-color: #A193C6 !important;
     background: #A193C6 !important;
     border: none !important;
 }
 
-/* USER MESSAGES (Darkest Purple Accent) */
+/* USER MESSAGES (Darkest Purple Accent #7C71B2 with white text) */
 .message.user { 
     background-color: #7C71B2 !important; 
     color: white !important; 
 }
 
-/* BOT MESSAGES (Lightest Pastel Lavender) */
+/* BOT MESSAGES (Lightest Pastel Lavender #F0EEF7) */
 .message.bot { 
     background-color: #F0EEF7 !important; 
     color: #251E3E !important; 
 }
 
-/* QUICK SUGGESTION CARDS */
-.chat-suggestions button, .suggestion-button, .form button.primary {
+/* QUICK SUGGESTION CARDS AND INTERACTIVE BUTTONS */
+.chat-suggestions button, .suggestion-button, .form button.primary, .custom-btn, .component-wrap button, [class*="suggestion"], .chatbot .slots button {
     background-color: #7C71B2 !important;
+    background: #7C71B2 !important;
     color: white !important;
     border: none !important;
 }
 
-/* TEXT INPUT AREA AND PLACEHOLDERS */
+/* TEXT INPUT BOX FIELD AND USER PLACEHOLDERS */
 .form, .input-container, div[class*="input-box"], textarea {
     background-color: #F0EEF7 !important;
     background: #F0EEF7 !important;
@@ -251,21 +260,28 @@ textarea::placeholder {
     opacity: 0.7;
 }
 
-/* SUBMIT ARROW BUTTON */
+/* SUBMIT ACTION ICON BUTTON */
 .submit-button, button[class*="submit"], .clear-button {
     background-color: #7C71B2 !important;
     color: white !important;
 }
 
-/* DEADLINE REMINDERS AND MARKDOWN INSIDE BOT MESSAGES */
-.message.bot .prose, .message.bot p, .message.bot ul, .message.bot li, .message.bot strong, .message.bot div {
+/* DEADLINE REMINDERS FIX (Completely overrides embedded grey code blocks to soft lavender) */
+.message.bot .prose, .message.bot p, .message.bot ul, .message.bot li, .message.bot strong, .message.bot div,
+.message.bot blockquote, .message.bot pre, .message.bot code, .message.bot .code-block, .message.bot div[class*="code"] {
     background-color: #F0EEF7 !important;
     background: #F0EEF7 !important;
-    color: #251E3E !important;
 }
 .message.bot a {
     color: #7C71B2 !important;
     text-decoration: underline !important;
+}
+
+/* BLOCKS LOGO AND COVER IMAGE FIXED CONTAINMENT */
+div[data-testid="block-container"] img { 
+    background: transparent !important; 
+    border: none !important; 
+    box-shadow: none !important; 
 }
 """
 
