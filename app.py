@@ -196,92 +196,61 @@ def respond(message, history):
 # --- Launch Interface ---
 my_theme = gr.themes.Soft(
     primary_hue="purple",
-    secondary_hue="violet"
+    secondary_hue="violet",
+).set(
+    # Main App Background 
+    background_fill_primary="#C8BBDC",
+    background_fill_secondary="#C8BBDC",
+    
+    # Text outside chat
+    body_text_color="white",
+    body_text_color_subdued="white",
+    
+    # Input Area & Buttons Styling
+    input_background_fill="#F0EEF7",
+    button_primary_background_fill="#7C71B2",
+    button_primary_text_color="white",
+    
+    # Custom adjustments for message boxes inside the component token trees
+    block_background_fill="#A193C6",
+    block_label_text_color="white",
+    border_color_primary="#7C71B2"
 )
 
-# Gradient CSS Setup
+# CSS code for details
 custom_css = """
-/* GRADIENT BACKGROUND FOR THE WHOLE APP (Smooth Purple Transitions) */
-html, body, .gradio-container, #root, [class*="gradio-container"], div[data-testid="main-panel"], .main-ui-grid, .sidebar { 
-    background: linear-gradient(-45deg, #F0EEF7, #E1D8EB, #C8BBDC, #E1D8EB) !important;
-    background-size: 400% 400% !important;
-    animation: gradientMove 15s ease infinite !important;
-}
-
-/* Keyframes to animate the background gradient smoothly */
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* TEXT OUTSIDE THE CHAT (Main Title & Description to White for visibility) */
-.gradio-container p, .gradio-container h1, .gradio-container h2, .gradio-container span, .gradio-container .markdown-text {
-    color: white !important;
-}
-
-/* CENTRAL CHAT PANEL BACKGROUND (Deeper Purple #A193C6) */
-.chatbot, .message-wrap, .bubble-wrap, div.message-list, div[id="chatbot"], .gradio-chatbot, div[data-testid="block-container"] {
+/* Force the central chat frame layout to your deeper purple #A193C6 */
+.chatbot, [class*="chatbot"], .gradio-chatbot {
     background-color: #A193C6 !important;
     background: #A193C6 !important;
-    border: none !important;
 }
 
-/* USER MESSAGES (Darkest Purple Accent #7C71B2 with white text) */
-.message.user { 
+/* User Messages — Darkest purple accent #7C71B2 with white text */
+.user, [class*="user"] { 
     background-color: #7C71B2 !important; 
     color: white !important; 
 }
+.user p, .user span { color: white !important; }
 
-/* BOT MESSAGES (Lightest Pastel Lavender #F0EEF7) */
-.message.bot { 
+/* Bot Messages — Lightest pastel lavender #F0EEF7 with dark readable text */
+.bot, [class*="bot"], blockquote, pre, code, .prose { 
     background-color: #F0EEF7 !important; 
+    background: #F0EEF7 !important;
     color: #251E3E !important; 
 }
+.bot p, .bot span, .bot strong, .bot li { color: #251E3E !important; }
 
-/* QUICK SUGGESTION CARDS AND INTERACTIVE BUTTONS */
-.chat-suggestions button, .suggestion-button, .form button.primary, .custom-btn, .component-wrap button, [class*="suggestion"], .chatbot .slots button {
+/* Quick-suggest cards and submit arrow button — Vibrant purple #7C71B2 */
+.chat-suggestions button, [class*="suggestion"], .submit-button, button[class*="submit"] {
     background-color: #7C71B2 !important;
     background: #7C71B2 !important;
     color: white !important;
-    border: none !important;
 }
 
-/* TEXT INPUT BOX FIELD AND USER PLACEHOLDERS */
-.form, .input-container, div[class*="input-box"], textarea {
-    background-color: #F0EEF7 !important;
-    background: #F0EEF7 !important;
-    color: #251E3E !important;
-    border: 1px solid #7C71B2 !important;
-    border-radius: 8px !important;
-}
-textarea::placeholder {
-    color: #7C71B2 !important;
-    opacity: 0.7;
-}
-
-/* SUBMIT ACTION ICON BUTTON */
-.submit-button, button[class*="submit"], .clear-button {
+/* Force fix for the loading spinner wrapper to stop it from turning grey */
+div[class*="pending"], .generating, [class*="loading"] {
     background-color: #7C71B2 !important;
     color: white !important;
-}
-
-/* DEADLINE REMINDERS FIX (Completely overrides embedded grey code blocks to soft lavender) */
-.message.bot .prose, .message.bot p, .message.bot ul, .message.bot li, .message.bot strong, .message.bot div,
-.message.bot blockquote, .message.bot pre, .message.bot code, .message.bot .code-block, .message.bot div[class*="code"] {
-    background-color: #F0EEF7 !important;
-    background: #F0EEF7 !important;
-}
-.message.bot a {
-    color: #7C71B2 !important;
-    text-decoration: underline !important;
-}
-
-/* BLOCKS LOGO AND COVER IMAGE FIXED CONTAINMENT */
-div[data-testid="block-container"] img { 
-    background: transparent !important; 
-    border: none !important; 
-    box-shadow: none !important; 
 }
 """
 
