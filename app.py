@@ -1,5 +1,6 @@
 #Imports------------------------------------------------------------------------- 
 import gradio as gr
+import os
 from huggingface_hub import InferenceClient
 from sentence_transformers import SentenceTransformer
 import torch
@@ -10,7 +11,10 @@ from datetime import datetime
 
 #Initialize models---------------------------------------------------------------
 model = SentenceTransformer('all-MiniLM-L6-v2')
-client = InferenceClient("Qwen/Qwen2.5-Coder-32B-Instruct")
+client = InferenceClient(
+    "Qwen/Qwen2.5-Coder-32B-Instruct",
+    token=os.getenv("HF_TOKEN")
+)
 
 #Preprocessing-----------------------------------------------------------------------
 def preprocess_text(text):
