@@ -7,7 +7,10 @@
 Instead of searching through countless websites and opportunity lists, users can simply describe what they are looking for and HerPath uses a **Retrieval-Augmented Generation (RAG)** approach to find relevant information from its knowledge base and generate personalized guidance.
 
 ---
+## 📸 Screenshot
 
+![HerPath Screenshot 1](screenshot1.png)
+![HerPath Screenshot 2](screenshot2.png)
 ## Features
 
 -  **Scholarship Discovery**  
