@@ -12,7 +12,7 @@ Instead of searching through countless websites and opportunity lists, users can
 ![HerPath Screenshot 2](Screenshot2.png)
 
 ## 🎥 Demo
-Click below to see the demo video.
+Click below to watch the demo video.
 [![HerPath Demo](Screenshot1.png)](https://youtu.be/2kJIlEfA6sY)
 
 ## Features
