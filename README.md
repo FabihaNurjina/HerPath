@@ -14,7 +14,7 @@ Instead of searching through countless websites and opportunity lists, users can
 
 ## 🎥 Demo
 
-[![HerPath Demo](screenshot.png)](https://youtu.be/2kJIlEfA6sY)
+[![HerPath Demo](Screenshot1.png)](https://youtu.be/2kJIlEfA6sY)
 
 ## Features
 
