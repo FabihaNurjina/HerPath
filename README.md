@@ -8,38 +8,38 @@ Instead of searching through countless websites and opportunity lists, users can
 
 ---
 
-## ✨ Features
+## Features
 
-- 🎓 **Scholarship Discovery**  
+-  **Scholarship Discovery**  
   Find relevant scholarships and educational opportunities.
 
-- 💻 **STEM Opportunities**  
+-  **STEM Opportunities**  
   Discover internships, hackathons, competitions, research programs, and other STEM opportunities.
 
-- 👩‍💻 **Career Guidance**  
+-  **Career Guidance**  
   Get personalized suggestions based on your interests, goals, education level, and location.
 
-- 🤝 **Mentorship & Programs**  
+-  **Mentorship & Programs**  
   Find programs and opportunities designed to support women in STEM.
 
-- 🔎 **Semantic Search**  
+-  **Semantic Search**  
   HerPath converts user questions and knowledge-base content into vector embeddings to identify the most relevant information.
 
-- 🤖 **AI-Powered Responses**  
+-  **AI-Powered Responses**  
   Uses `Qwen/Qwen2.5-Coder-32B-Instruct` through the Hugging Face Inference API to generate responses.
 
-- 📅 **Google Calendar Deadline Reminders**  
+-  **Google Calendar Deadline Reminders**  
   When an application deadline is detected, HerPath automatically generates a Google Calendar link so users can save the deadline.
 
-- 💬 **Interactive Chat Interface**  
+-  **Interactive Chat Interface**  
   Built with Gradio for a simple and accessible conversational experience.
 
-- 🌸 **Personalized & Encouraging Guidance**  
+-  **Personalized & Encouraging Guidance**  
   Responses are designed to be concise, supportive, actionable, and empowering.
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 HerPath follows a simple **Retrieval-Augmented Generation (RAG)** pipeline:
 
@@ -132,18 +132,18 @@ For detected deadlines, it generates a **Google Calendar event link** automatica
 
 | Technology | Purpose |
 |---|---|
-| 🐍 Python | Core programming language |
-| 🎨 Gradio | Interactive web interface |
-| 🤗 Hugging Face | AI inference |
-| 🧠 Qwen 2.5 Coder 32B | Response generation |
-| 🔎 Sentence Transformers | Semantic embeddings |
-| ⚡ PyTorch | Vector similarity calculations |
-| 📅 Google Calendar | Application deadline reminders |
-| 🎨 Custom CSS | User interface styling |
+|  Python | Core programming language |
+|  Gradio | Interactive web interface |
+|  Hugging Face | AI inference |
+|  Qwen 2.5 Coder 32B | Response generation |
+|  Sentence Transformers | Semantic embeddings |
+|  PyTorch | Vector similarity calculations |
+|  Google Calendar | Application deadline reminders |
+|  Custom CSS | User interface styling |
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 HerPath/
@@ -162,7 +162,7 @@ HerPath/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -243,7 +243,7 @@ These example prompts are included directly in the application's chat interface.
 
 ---
 
-## 🌱 Why HerPath?
+##  Why HerPath?
 
 Finding the right opportunity can be difficult.
 
@@ -265,7 +265,7 @@ The goal is not simply to provide information, but to help users understand:
 
 ---
 
-## 🔬 Technical Highlights
+##  Technical Highlights
 
 ### Semantic Retrieval
 
@@ -296,7 +296,7 @@ The retrieved information is inserted into the system prompt so the AI can groun
 
 ---
 
-## 🎨 Interface
+##  Interface
 
 HerPath uses a custom Gradio interface with:
 
@@ -311,25 +311,25 @@ The interface is built using `gr.Blocks`, `gr.ChatInterface`, and a customized G
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 Potential future development includes:
 
-- 🌍 Expanding the opportunity database
-- 🔄 Automatic opportunity/deadline updates
-- 🔗 More verified official opportunity sources
-- 👤 User profiles and saved preferences
-- ⭐ Save/bookmark opportunities
-- 📊 Opportunity recommendation scoring
-- 🔔 Automated deadline notifications
-- 🌐 Multi-language support
-- 📱 Mobile-friendly deployment
-- 🧠 Improved retrieval and ranking
-- 🗺️ Location-specific opportunity recommendations
+-  Expanding the opportunity database
+-  Automatic opportunity/deadline updates
+-  More verified official opportunity sources
+-  User profiles and saved preferences
+-  Save/bookmark opportunities
+-  Opportunity recommendation scoring
+-  Automated deadline notifications
+-  Multi-language support
+-  Mobile-friendly deployment
+-  Improved retrieval and ranking
+-  Location-specific opportunity recommendations
 
 ---
 
-## 👩‍💻 Built For
+##  Built For
 
 HerPath was created with a particular focus on helping **women and girls explore STEM, education, and career opportunities**.
 
@@ -337,7 +337,7 @@ The AI's system instructions explicitly position it as an empathetic and empower
 
 ---
 
-## 📜 License
+##  License
 
 Add your preferred open-source license here, for example:
 
@@ -347,7 +347,7 @@ MIT License
 
 ---
 
-## 💜 HerPath
+##  HerPath
 
 **Discover your opportunities.  
 Build your skills.  
