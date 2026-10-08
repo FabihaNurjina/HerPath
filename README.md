@@ -9,8 +9,8 @@ Instead of searching through countless websites and opportunity lists, users can
 ---
 ## 📸 Screenshot
 
-![HerPath Screenshot 1](screenshot1.png)
-![HerPath Screenshot 2](screenshot2.png)
+![HerPath Screenshot 1](Screenshot 1.png)
+![HerPath Screenshot 2](Screenshot 2.png)
 ## Features
 
 -  **Scholarship Discovery**  
